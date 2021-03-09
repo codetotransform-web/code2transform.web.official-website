@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 body{
     padding: 0;
     margin: 0;
@@ -165,25 +164,3 @@ body{
   .column .sign_up:hover{
     color: #000000;
   }
-=======
-body{
-    padding: 0;
-    margin: 0;
-    scroll-behavior: smooth;
-}
-
-#landing_page{
-    background: url('../landing_page_bg.jpg') no-repeat;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.no_scroll_bar::-webkit-scrollbar {
-    display: none;
-}
-.no_scroll_bar {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-}
->>>>>>> a012bf602f174675a97cf686ba9c01668011488d
