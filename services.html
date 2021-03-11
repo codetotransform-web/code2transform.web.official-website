@@ -15,273 +15,263 @@
         .services_page{
             width: 100%;
             height: 100vh;
-            border: 1px solid red;
         }
         .container
-{
-  max-width: 1000px;
-  margin: 100px auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
+        {
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        }
 
 
 
-        /* Services */
-        .container {
-    width: 1000px;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-}
+        
+        /* .container {
+            width: 1000px;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+        } */
 
-.container .card {
-    position: relative;
-    border-radius: 10px;
-}
+        .container .card {
+            position: relative;
+            border-radius: 10px;
+            /* height: 25vh; */
+        }
 
-.container .card .icon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #f00;
-    transition: 0.7s;
-    z-index: 1;
-}
+        .container .card .icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #f00;
+            transition: 0.7s;
+            z-index: 1;
+        }
 
-.container .card:nth-child(1) .icon {
-    background: #e07768;
-}
+        .container .card:nth-child(1) .icon {
+            background: #e07768;
+        }
 
-.container .card:nth-child(2) .icon {
-    background: #6eadd4;
-}
+        .container .card:nth-child(2) .icon {
+            background: #6eadd4;
+        }
 
-.container .card:nth-child(3) .icon {
-    background: #4aada9;
-}
+        .container .card:nth-child(3) .icon {
+            background: #4aada9;
+        }
 
 
-.container .card .icon .fa {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 80px;
-    transition: 0.7s;
-    color: #fff;
-}
+        .container .card .icon .fa {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 80px;
+            transition: 0.7s;
+            color: #fff;
+        }
 
-i {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 80px;
-    transition: 0.7s;
-    color: #fff;
-}
+        i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 80px;
+            transition: 0.7s;
+            color: #fff;
+        }
 
-.container .card .face {
-    width: 300px;
-    height: 200px;
-    transition: 0.5s;
-}
+        .container .card .face {
+            width: 300px;
+            height: 200px;
+            transition: 0.5s;
+        }
 
-.container .card .face.face1 {
-    position: relative;
-    background: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    transform: translateY(100px);
-}
+        .container .card .face.face1 {
+            position: relative;
+            background: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+            transform: translateY(100px);
+        }
 
-.container .card:hover .face.face1{
-    background: #ff0057;
-    transform: translateY(0px);
-}
+        .container .card:hover .face.face1{
+            background: white;
+            transform: translateY(0px);
+        }
 
-.container .card .face.face1 .content {
-    opacity: 1;
-    transition: 0.5s;
-}
+        .container .card .face.face1 .content {
+            opacity: 1;
+            transition: 0.5s;
+        }
 
-.container .card:hover .face.face1 .content {
-    opacity: 1;
-}
+        .container .card:hover .face.face1 .content {
+            opacity: 1;
+        }
 
-.container .card .face.face1 .content i{
-    max-width: 100px;
-}
+        .container .card .face.face1 .content i{
+            max-width: 100px;
+        }
 
-.container .card .face.face2 {
-    position: relative;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
-    transform: translateY(-100px);
-}
+        .container .card .face.face2 {
+            position: relative;
+            background: #ff0057;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+            transform: translateY(-100px);
+        }
 
-.container .card:hover .face.face2{
-    transform: translateY(0);
-}
+        .container .card:hover .face.face2{
+            transform: translateY(0);
+        }
 
-.container .card .face.face2 .content p {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    color: #414141;
-}
+        .container .card .face.face2 .content p {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #414141;
+        }
 
-.container .card .face.face2 .content h3 {
-    margin: 0 0 10px 0;
-    padding: 0;
-    color: #fff;
-    font-size: 24px;
-    text-align: center;
-    color: #414141;
-} 
+        .container .card .face.face2 .content h3 {
+            margin: 0 0 10px 0;
+            padding: 0;
+            color: #fff;
+            font-size: 24px;
+            text-align: center;
+            color: #414141;
+        } 
 
-.container a {
-    text-decoration: none;
-    color: #414141;
-}
+        .container a {
+            text-decoration: none;
+            color: #414141;
+        }
     </style>
+
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
-    <div style="background: url('./svg/webdesign.svg') no-repeat;background-size: contain;height: 100vh;background-position: right;">Hello</div>
-    <div style="width: 100vw;">
-        <section>
-            <div class="services_page" style="color: white;display: flex;">
-                <div style="width: 40%;height: 100%;background-color: #111 ;display: flex;justify-content: center;align-items: center;">
-                    <img src="./svg/webdesign.svg" style="max-width: 100%;max-height: 100%;">
+    <section>
+        <div style="height: 100vh;width: 100vw;border: 1px solid black;display: flex;justify-content: center;align-items: center;">
+            <div style="display: flex;justify-content: space-around;height: 100%; background-image: url('Images\images.jpeg');">
+                <div style="width: 10vw;height: 100%;display: flex;align-items: center;justify-content: center;padding: 0;">
+                    <div style="margin: 0;transform: rotateZ(-90deg);"><div style="display: block;font-size: 5rem;">Technology</div></div>
                 </div>
-                <div style="width: 60%;height: 100%;background-color: #111 ;">
-                    <div style="text-align: center;font-size: xx-large;height: 25%;display: flex;flex-direction: column;justify-content: center;">Web Designing</div>
-                    <div class="container" style="height: 75%;width: 100%;display: flex;justify-content: space-around;align-items: center;">
-                        <!-- <div class="card">
-                            <div class="Box">
-                              <img src="https://images.pexels.com/photos/3699319/pexels-photo-3699319.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                
+                
+                <div style="width: 90vw;border: 1px solid red;display: flex;justify-content: center;align-items: center;">
+                    <div class="swiper-container1 no_scroll_bar" style="width: 100%;height: 100%;">
+                        <div class="swiper-wrapper" style="background-image: url('./isometric/technology.jpg');background-size: cover;">
+                            <div class="swiper-slide">
+                                <!-- <p>Front-end---HTML,CSS,javascript</p>
+                                <div style="width: 200px;height: 200px;border-radius: 20px;overflow: hidden;">
+                                    <div style="height: 80%;width: 100%;background-color: white;"><img src="./svg/undraw_Landing_page_re_6xev.svg" style="max-width: 100%;"></div>
+                                    <div style="height: 20%;width: 100%;background-color: black;display: flex;justify-content: center;align-items: center;">Landing Page Design</div>
+                                </div> -->
                             </div>
-                            <div class="details">
-                              <h2>Lorem ipsum dolor</h2>
-                              <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                            <div class="swiper-slide">
+                                <div style="width: 100%;height: 10%;font-size: 2rem;background-color: rgba(0,0,0,0.5);color: white;display: flex;justify-content: center;align-items: center;">Front-End Web Designing</div>
+                                <div style="width: 100%;height: 90%; display: flex;justify-content: space-around;align-items: center;flex-wrap: wrap;">
+                                    <div style="width: 100%;height: 20%;display: flex;justify-content: space-around;align-items: center;">
+                                        <div style="width: 10rem;height: 10rem;background-color: white;border-radius: 10px;display: flex;justify-content: center;align-items: center;"><img src="./technology logo/html 5.png" style="max-width: 100%;max-height: 90%;"></div>
+                                        <div style="width: 10rem;height: 10rem;background-color: white;border-radius: 10px;display: flex;justify-content: center;align-items: center;"><img src="./technology logo/css1.png" style="max-width: 100%;max-height: 90%;"></div>
+                                        <div style="width: 10rem;height: 10rem;background-color: white;border-radius: 10px;display: flex;justify-content: center;align-items: center;"><img src="./technology logo/javascript.png" style="max-width: 100%;max-height: 90%;"></div>
+                                        </div>
+                                    <div style="width: 100%;height: 20%;display: flex;justify-content: space-around;align-items: center;">
+                                        <div style="width: 15rem;height: 10rem;background-color: black;border-radius: 10px;display: flex;justify-content: center;align-items: center;"><img src="./technology logo/react.png" style="max-width: 100%;max-height: 90%;"></div>
+                                        <div style="width: 15rem;height: 10rem;background-color: white;border-radius: 10px;display: flex;justify-content: center;align-items: center;overflow: hidden;"><img src="./technology logo/angular.jpg" style="max-width: 100%;max-height: 90%;"></div>
+                                    </div>
+                                    
+                                    
+                                </div>
                             </div>
-                        </div> -->
-                        <div class="card">
-                            <div class="face face1">
-                                <div class="content">
-                                    <div class="icon" style="display: flex;align-items: center;justify-content: center;">
-                                        <h2 style="color: black;">Front-end Designing</h2>
-                                        <!-- <i class="fa fa-linkedin-square" aria-hidden="true"></i> -->
+                            <div class="swiper-slide" style="width: 100%;height: 100%;">
+                                <div style="width: 100%;height: 10%;font-size: 2rem;background-color: rgba(0,0,0,0.5);color: white;display: flex;justify-content: center;align-items: center;">Backend Development</div>
+                                <div style="width: 100%;height: 90%; display: flex;justify-content: space-around;align-items: center;flex-wrap: wrap;">
+                                    <div style="width: 100%;height: 20%;display: flex;justify-content: space-around;align-items: center;">
+                                        <div style="width: 16rem;height: 8rem;background-color: white;border-radius: 10px;display: flex;justify-content: center;align-items: center;overflow: hidden;"><img src="./technology logo/django.png" style="max-width: 100%;height: 100%;"></div>
+                                        <div style="width: 12rem;height: 10rem;background-color: white;border-radius: 10px;display: flex;justify-content: center;align-items: center;overflow: hidden;"><img src="./technology logo/nodejs.png" style="max-width: 80%;max-height: 90%;"></div>
+                                        <div style="width: 10rem;height: 10rem;background-color: white;border-radius: 10px;display: flex;justify-content: center;align-items: center;overflow: hidden;"><img src="./technology logo/flask.jpg" style="max-width: 100%;max-height: 90%;"></div>
+                                        </div>
+                                    <div style="width: 100%;height: 20%;display: flex;justify-content: space-around;align-items: center;">
+                                        <div style="width: 15rem;height: 10rem;background-color: white;border-radius: 10px;display: flex;justify-content: center;align-items: center;"><img src="./technology logo/aws-amplify.jpeg" style="max-width: 100%;max-height: 90%;"></div>
+                                    </div>
+                                </div>
+                                
+                                
+                                <!-- <img src="./websites.png" style="max-width: 100%;max-height: 100%;"> -->
+                            </div>
+                            <div class="swiper-slide">
+                                <div style="width: 100%;height: 10%;font-size: 2rem;background-color: rgba(0,0,0,0.5);color: white;display: flex;justify-content: center;align-items: center;">Databases</div>
+                                <div style="width: 100%;height: 90%; display: flex;justify-content: space-around;align-items: center;flex-wrap: wrap;">
+                                    <div style="width: 15rem;height: 10rem;background-color: black;border-radius: 10px;display: flex;justify-content: center;align-items: center;">
+                                        <img src="./technology logo/mysql.png" style="max-width: 100%;max-height: 90%;">
+                                    </div>
+                                    <div style="width: 10rem;height: 10rem;background-color: white;border-radius: 10px;display: flex;justify-content: center;align-items: center;">
+                                        <img src="./technology logo/mongoDB.png" style="max-width: 100%;max-height: 90%;">
+                                    </div>
+                                    <div style="width: 15rem;height: 10rem;background-color: white;border-radius: 10px;display: flex;justify-content: center;align-items: center;">
+                                        <img src="./technology logo/postgersql.png" style="max-width: 100%;max-height: 90%;">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div style="width: 100%;height: 10%;font-size: 2rem;background-color: rgba(0,0,0,0.5);color: white;display: flex;justify-content: center;align-items: center;">Cloud Solutions</div>
+                                <div style="width: 100%;height: 90%; display: flex;justify-content: space-around;align-items: center;flex-wrap: wrap;">
+                                    <div style="width: 15rem;height: 10rem;background-color: white;border-radius: 10px;display: flex;justify-content: center;align-items: center;">
+                                        <img src="./technology logo/aws.png" style="max-width: 90%;max-height: 90%;">
+                                    </div>
+                                    <div style="width: 15rem;height: 10rem;background-color: white;border-radius: 10px;display: flex;justify-content: center;align-items: center;">
+                                        <img src="./technology logo/google-cloud.jpg" style="max-width: 100%;max-height: 90%;">
+                                    </div>
+                                    <div style="width: 15rem;height: 10rem;background-color: white;border-radius: 10px;display: flex;justify-content: center;align-items: center;">
+                                        <img src="./technology logo/heroku.png" style="max-width: 100%;max-height: 90%;">
+                                    </div>
+                                    <div style="width: 15rem;height: 10rem;background-color: white;border-radius: 10px;display: flex;justify-content: center;align-items: center;">
+                                        <img src="./technology logo/digital ocean.png" style="max-width: 100%;max-height: 90%;">
                                     </div>
                                 </div>
                             </div>
-                            <div class="face face2">
-                                <div class="content">
-                                    <h3>
-                                        <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank">_adamdipinto</a>
-                                    </h3>
-                                    <p>This is where I network and build my professional protfolio.</p>
+                            <div class="swiper-slide">
+                                <div style="width: 100%;height: 10%;font-size: 2rem;background-color: rgba(0,0,0,0.5);color: white;display: flex;justify-content: center;align-items: center;">Wordpress</div>
+                                <div style="width: 100%;height: 90%; display: flex;justify-content: space-around;align-items: center;flex-wrap: wrap;">
+                                    <div style="width: 15rem;height: 10rem;background-color: white;border: 1px solid blue;border-radius: 10px;display: flex;justify-content: center;align-items: center;">
+                                        <img src="./technology logo/wordpress.png" style="max-width: 100%;max-height: 90%;">
+                                    </div>
+                                    <div style="width: 15rem;height: 10rem;background-color: white;border-radius: 10px;display: flex;justify-content: center;align-items: center;overflow: hidden;">
+                                        <img src="./technology logo/elementor.jpg" style="max-width: 100%;height: 100%;">
+                                    </div>
+                                    
                                 </div>
                             </div>
-                        </div>
-                        <div style="width: 200px;height: 200px;border-radius: 20px;overflow: hidden;">
-                            <div style="height: 80%;width: 100%;background-color: white;"><img src="./svg/undraw_Landing_page_re_6xev.svg" style="max-width: 100%;"></div>
-                            <div style="height: 20%;width: 100%;background-color: black;display: flex;justify-content: center;align-items: center;">Landing Page Design</div>
-                        </div>
-                        <div style="width: 200px;height: 200px;border-radius: 20px;overflow: hidden;">
-                            <div style="height: 80%;width: 100%;background-color: white;"><img src="./svg/undraw_Landing_page_re_6xev.svg" style="max-width: 100%;"></div>
-                            <div style="height: 20%;width: 100%;background-color: black;display: flex;justify-content: center;align-items: center;">Landing Page Design</div>
+                            
+                            
                         </div>
                     </div>
                 </div>
-                
             </div>
-        </section>
-        
-        <section>
-            <div class="services_page">
-                <div style="width: 50%;height: 100%;border: 1px solid red;;background: url('./svg/webdesign.svg') no-repeat;background-size: 100% 100%;background-position: left;"></div>
-                <div style="width: 50%;height: 100%;border: 1px solid red;">
-                    <div style="text-align: center;font-size: xx-large;height: 25%;display: flex;flex-direction: column;justify-content: center;border: 1px solid red;">Web Designing</div>
-                    
-                </div>
-                <div>
-                    
-                </div>
-            </div>
-        </section>
-        
-        <section>
-            <div class="services_page"></div>
-        </section>
-        
-        <section>
-            <div class="services_page"></div>
-        </section>
-        
-        <section>
-            <div class="services_page"></div>
-        </section>
-        
-    </div>
+        </div>
+    </section>
 
 
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-    <script src="JS/snap-scroll.min.js"></script>
-    <script type="text/javascript">
-        // $("section").SnapScroll({
 
-        //     // Add classes to elements
-        //     classes:true,                   
-        
-        //     // Class applied to snap point elements
-        //     classSnap:"snap-scroll",              
-        
-        //     // Class applied to a snap point element when within the window
-        //     classVisible:"snap-scroll-visible",         
-        
-        //     // Class applied to a snap point element when snapped
-        //     classActive:"snap-scroll-active",         
-        
-        //     // Use element id in hash
-        //     hashes:false,                   
-        
-        //     // Delay between scroll events needed to trigger scroll action
-        //     scrollDelay:300,                  
-        
-        //     // Interval used for wheel to trigger scroll action
-        //     wheelInterval:1000,                 
-        
-        //     // The amount of time it takes to animate to a snap point
-        //     animateDuration:250,       
-        
-        //     // The amount of time to wait after an animation is complete before scrolling can be triggered         
-        //     animateTimeBuffer:100,                
-        
-        //     // Snap to the top of page regardless of there being an element
-        //     snapTop:true,           
-        
-        //     // Snap to the bottom of page regardless of there being an element        
-        //     snapBottom:true,                  
-        
-        //     // Extra snap points not tied to an element
-        //     snaps:[],                     
-        
-        //     // Deviation in milliseconds from the average needed to separate wheel events
-        //     maxWheelDeviation:100       
-        
-        // });
-    </script>
+    
+
+<script src="JS\main.js"></script>
 </body>
 </html>

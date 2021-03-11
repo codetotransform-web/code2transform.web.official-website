@@ -22,12 +22,12 @@ body{
 } */
 
 /* Services */
-.service_pages{
+/* .service_pages{
   width: 100%;
   height: 100%;
   background-color: aqua;
   border: 1px solid red;
-}
+} */
 
 
 
@@ -72,8 +72,8 @@ a:hover {
   transition: all 500ms ease-in;
   transition-delay: 1s;
   margin: auto;
-  margin-top: 100px;
-  --margin-top: 100px;
+  margin-top: 50%;
+  --margin-top: 50%;
 }
 .infocardContainer:hover {
   width: 500px;
@@ -82,7 +82,7 @@ a:hover {
 }
 
 .infocardContainer div {
-  text-color: white;
+  color: white;
   flex-shrink: 1;
   width: 100%;
   --background-color: green;
@@ -148,19 +148,17 @@ a:hover {
   --margin: 0 1px 0 1px;
   border-radius: 25px;
 }
-/TODO: animate copy main transition style for info/
+/* /TODO: animate copy main transition style for info/
 .infocardContainer #textbois #hotlinks *:hover {
   
   
-}
+} */
 
 
 
 
 /* Contact Us */
-.container {
-	/* min-width: 700px;
-	min-height: 350px; */
+.contact_container {
   margin: auto;
   width: 90%;
   height: 70%;
@@ -185,18 +183,18 @@ a:hover {
 	border-radius: 20px;
   border: 1px solid green;
 }
-.content {
+.contact_content {
 	transform: translatez(70px) scale(0.8);
 	line-height: 1.5em;
 }
-.content h1 {
+.contact_content h1 {
 	position: relative;
 }
-.content p {
+.contact_content p {
 	margin-top: 50px;
 	line-height: 2em;
 }
-.content h1:before {
+.contact_content h1:before {
 	content: "";
 	position: absolute;
 	bottom: -20px;
@@ -244,7 +242,7 @@ a:hover {
   background-size: cover;
   /* overflow: hidden; */
 }
-.container:hover {
+.contact_container:hover {
 	-webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
 }
@@ -363,78 +361,78 @@ form input[type="submit"] {
     height: 50vh;
   
   
-  }
-  .footer{
-    background-color: black;
-    color: white;
-    height: 60vh;
-    background-color: black;
+}
+.footer{
+  background-color: black;
+  color: white;
+  height: 60vh;
+  background-color: black;
+
+}
+.fa {
   
-  }
-  .fa {
-    
-    padding: 20px 0px 20px 20px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
+  padding: 20px 0px 20px 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #000000;
+  color: white;
+  font-size: x-large;
+  /* margin-left: 35px; */
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #000000;
+  color: white;
+  /* margin: 1px 2px 2px -11px; */
+
+}
+.fa-linkedin{
+  background: #000000;
+  color: white;
+  /* margin: 1px 2px 2px -15px; */
+}
+.fa-instagram{
+  background: #000000;
+  color: white;
+  /* margin: 1px 2px 2px -11px; */
+
+}
+.column .supp_f a{
+  display: block;
+  margin:15px 15px 15px 0px;
     text-decoration: none;
-  }
-  
-  /* Add a hover effect if you want */
-  .fa:hover {
-    opacity: 0.7;
-  }
-  
-  /* Set a specific color for each brand */
-  
-  /* Facebook */
-  .fa-facebook {
-    background: #000000;
     color: white;
-    font-size: x-large;
-    /* margin-left: 35px; */
-  }
-  
-  /* Twitter */
-  .fa-twitter {
-    background: #000000;
-    color: white;
-    /* margin: 1px 2px 2px -11px; */
-  
-  }
-  .fa-linkedin{
-    background: #000000;
-    color: white;
-    /* margin: 1px 2px 2px -15px; */
-  }
-  .fa-instagram{
-    background: #000000;
-    color: white;
-    /* margin: 1px 2px 2px -11px; */
-  
-  }
-  .column .supp_f a{
-    display: block;
-    margin:15px 15px 15px 0px;
-     text-decoration: none;
-     color: white;
-     font-size: 16px;
-     font-family: 'Lato', sans-serif;
-  }
-  .column .supp_f a:hover{
-  color: gray;
-  }
-  
-  .button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 16px;
-  }
-  .column .sign_up:hover{
-    color: #000000;
-  }
+    font-family: 'Lato', sans-serif;
+}
+.column .supp_f a:hover{
+color: gray;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.column .sign_up:hover{
+  color: #000000;
+}
