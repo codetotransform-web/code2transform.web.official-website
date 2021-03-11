@@ -1,0 +1,6 @@
+git config --list
+
+git add .
+git commit -m "push for abhishek"
+
+git push origin <local_branch_name>:<remote_branch>
