@@ -4,3 +4,7 @@ git add .
 git commit -m "push for abhishek"
 
 git push origin <local_branch_name>:<remote_branch>
+
+In case of any error 
+    git pull origin main
+    git push origin <local_branch_name>:<remote_branch>
