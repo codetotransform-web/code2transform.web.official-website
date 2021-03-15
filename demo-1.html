@@ -1,3 +1,1233 @@
+<div style="display: flex;justify-content: space-around;align-items: center;height: 10vh;margin: 0;padding: 0;background-color: black;">
+    <!-- Logo -->
+    <div style="width: 50%;display: flex;justify-content: start;">
+        <h1 style="padding-left: 15%;color: white;">code2transform</h1>
+    </div>
+    <!-- Menu links -->
+    <div style="width: 50%;">
+        <div style="display: flex;justify-content: space-around;align-items: center;height: 100%;">
+            <a href="#" style="color: white;text-decoration: none;display: flex;justify-content: center;align-items: center;">Home</a>
+            <a href="#" style="color: white;text-decoration: none;display: flex;justify-content: center;align-items: center;">Services</a>
+            <a href="#" style="color: white;text-decoration: none;display: flex;justify-content: center;align-items: center;">Technology</a>
+            <a href="#" style="color: white;text-decoration: none;display: flex;justify-content: center;align-items: center;">Contact</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="split_heading" style="color: white;">Web Designing</div>
+                            <div class="split_content">
+                                <div class="tech_card_container">
+                                    <div class="tech_card">
+                                        <img src="./technology logo/html 5.png" style="max-width: 100%;max-height: 90%;">
+                                    </div>
+                                    <div class="tech_card">
+                                        <img src="./technology logo/css1.png" style="max-width: 100%;max-height: 90%;">
+                                    </div>
+                                    <div class="tech_card">
+                                        <img src="./technology logo/js.jpg" style="max-width: 100%;max-height: 90%;">
+                                    </div>
+                                    <div class="tech_card" style="background-color: black;">
+                                        <img src="./technology logo/react.png" style="max-width: 100%;max-height: 90%;">
+                                    </div>
+                                    <div class="tech_card">
+                                        <img src="./technology logo/angular.jpg" style="max-width: 100%;max-height: 90%;">
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+
+
+
+
+
+
+
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        max-width: 100vw;
+    }
+    .services_page{
+        width: 100%;
+        height: 100vh;
+    }
+    .container
+    {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    }
+
+    .split{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    .split .split_subject{
+        width: 10%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 500%;
+        letter-spacing: 5px;
+        transform:rotateZ(-90deg);
+    }
+    .split .split_body{
+        width: 90%;
+        height: 100%;
+    }
+    .split .split_body .split_heading{
+        width: 100%;
+        height: 10%;
+        background-color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: xx-large;
+        
+    }
+    .split .split_body .split_content{
+        width: 100%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #111111;
+    }
+    .split .split_body .split_content_isometric{
+        width: 40%;
+        height: 100%;
+    }
+    .split .split_body .split_content_isometric img{
+        width: 100%;
+        height: 100%;
+    }
+    .split .split_body .split_content_card_container{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-wrapper{
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+
+    /* Custom Card */
+    .custom_card{
+        width: 20vw;
+        height: 30vh;
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .custom_card:nth-child(n+3){
+        margin-bottom: -5vh;
+    }
+    .face_up{
+        position: relative;
+        width: 100%;
+        height: 70%;
+        background-color: aqua;
+        transform: translateY(30%);
+        z-index: 3;
+        transition: 0.5s;
+        background-color: #111;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .card_heading{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(0,0,0,0.7);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+    .face_down{
+        width: 100%;
+        height: 30%;
+        transform: translateY(-50%);
+        z-index: 1;
+        transition: 0.5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .custom_card:hover .face_up{
+        transform: translateY(0);
+        background-color: white;
+        
+    }
+    .custom_card:hover .face_down{
+        transform: translateY(0);
+        background-color: #ff0057;
+        
+    }
+    @media (max-width: 400px){
+        .split{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+        .split .split_subject{
+            width: 100%;
+            height: 10vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform:rotateZ(0deg);
+            font-size: 300%;
+            letter-spacing: 5px;
+        }
+        .split .split_body{
+            width: 100%;
+        }
+        .split .split_body .split_heading{
+            width: 100%;
+            height: 5vh;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: xx-large;
+            
+        }
+
+        .split .split_body .split_content{
+            width: 100%;
+            align-items: center; */
+            background-color: #111111;
+            display: block;
+        }
+        .split .split_body .split_content_isometric{
+            height: 35%;
+            width: 100%;
+            display: block;
+            /* border: 1px solid red; */
+        }
+        .split .split_body .split_content_isometric img{
+            width: 100%;
+            height: 100%;
+        }
+        .split .split_body .split_content_card_container{
+            width: 100%;
+            height: 75%;
+            /* height: 500vh; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            overflow: auto;
+        }
+        
+
+        .custom_card{
+            width: 45vw;
+            height: 15vh;
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .custom_card:nth-child(n+3){
+            margin-bottom: 15vh;
+        }
+        .face_up{
+            position: relative;
+            width: 100%;
+            height: 70%;
+            background-color: aqua;
+            transform: translateY(30%);
+            z-index: 3;
+            transition: 0.5s;
+            background-color: #111;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .card_heading{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(0,0,0,0.7);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .face_down{
+            /* position: relative; */
+            width: 100%;
+            height: 30%;
+            transform: translateY(-50%);
+            z-index: 1;
+            transition: 0.5s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .custom_card:hover .face_up{
+            transform: translateY(0);
+            background-color: white;
+            
+        }
+        .custom_card:hover .face_down{
+            transform: translateY(0);
+            background-color: #ff0057;
+            
+        }
+
+        
+    
+    }
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* .container {
+        width: 1000px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    } */
+
+    /* .card {
+        position: relative;
+        border-radius: 10px;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .card .icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #f00;
+        transition: 0.7s;
+        z-index: 1;
+    }
+
+    .card:nth-child(1) .icon {
+        background: #e07768;
+    }
+
+    .card:nth-child(2) .icon {
+        background: #6eadd4;
+    }
+
+    .card:nth-child(3) .icon {
+        background: #4aada9;
+    }
+
+
+    .card .icon .fa {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 80px;
+        transition: 0.7s;
+        color: #fff;
+    }
+
+    i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 80px;
+        transition: 0.7s;
+        color: #fff;
+    }
+
+    .card .face {
+        width: 20vw;
+        /* height: 200px; */
+        /* height: 20vh;
+        transition: 0.5s;
+    } */
+
+    .card .face.face1 {
+        position: relative;
+        background: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        height: 30vh;
+        transform: translateY(10vh);
+    }
+
+    .card:hover .face.face1{
+        background: white;
+        transform: translateY(0px);
+    }
+
+    .card .face.face1 .content {
+        opacity: 1;
+        transition: 0.5s;
+    }
+
+    .card:hover .face.face1 .content {
+        opacity: 1;
+    }
+
+    .card .face.face1 .content i{
+        max-width: 100%;
+    }
+
+    .card .face.face2 {
+        position: relative;
+        background: #ff0057;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        box-sizing: border-box;
+        box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+        transform: translateY(-10vh);
+        height: 10vh;
+        width: 20vw;
+    }
+    .card .face.face2 .content{
+        width: 20vw;
+    }
+
+    .card:hover .face.face2{
+        transform: translateY(0);
+    }
+
+    .card .face.face2 .content p {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        color: #414141;
+    }
+
+    .card .face.face2 .content h3 {
+        margin: 0 0 10px 0;
+        padding: 0;
+        color: #fff;
+        font-size: 24px;
+        text-align: center;
+        color: #414141;
+    } 
+
+    .container a {
+        text-decoration: none;
+        color: #414141;
+    } */
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="split" style="height: 100%;">
+    <div style="display: flex;align-items: center;justify-content: center;padding: 0;">
+        <div class="rotate_ant">
+            <div style="display: block;font-size: 200%;">
+                Services
+            </div>
+        </div>
+    </div>
+    <div class="no_scroll_bar" style="overflow: auto;">
+        <!-- Web Design -->
+        <div style="width: 100%;height: 100%;">
+            <!-- <section> -->
+                <div class="services_page" style="color: white;width: 100%;height: 100%;">
+                    <div style="width: 100%;height: 10%;background-color: #ff0057;">
+                        <div style="text-align: center;font-size: xx-large;height: 100%;display: flex;flex-direction: column;justify-content: center;">Web Designing
+                        </div>
+                    </div>
+                    <div class="service_content" >
+                        <div class="isometric_image" style="background-color: #111 ;">
+                            <img src="./isometric/webdesign.svg" style="max-width: 100%;height: 100%;">
+                        </div>
+                        <div style="background-color: #111 ;">
+                            <div class="container" style="width: 100%;">
+                                
+                                <!-- <div style="width: 100%;margin-top: -5vh;display: flex;justify-content: space-around;">
+                                    <div class="card" style="overflow: hidden;">
+                                        <div class="face face1" >
+                                            <div class="content" >
+                                                <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/frontend/landing_page.svg') no-repeat;background-size: contain;">
+                                                    <h3 style="color: white;text-align: center;padding: 5px;background-color: rgba(0,0,0,0.8);margin-bottom: -1px;width: 100%;">Landing Page</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="face face2">
+                                            <div class="content">
+                                                <h3>
+                                                    <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
+                                                </h3>
+                                                <p style="color: white;">Landing page is a standalone web page, created specifically for a marketing or advertising campaign.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card" style="overflow: hidden;">
+                                        <div class="face face1" >
+                                            <div class="content" >
+                                                <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/frontend/psd_webpage.svg') no-repeat;background-size: contain;">
+                                                    <h3 style="color: white;text-align: center;padding: 5px;background-color: rgba(0,0,0,0.8);margin-bottom: -1px;width: 100%;">PSD to Webpage</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="face face2">
+                                            <div class="content">
+                                                <h3>
+                                                    <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
+                                                </h3>
+                                                <p style="color: white;">The first ever automatic conversion of photoshop® .psd files to html.
+                                                    Retain original layers including positions as html div layers.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div> -->
+                                <div class="card" style="overflow: hidden;">
+                                    <div class="face face1" >
+                                        <div class="content" >
+                                            <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/frontend/landing_page.svg') no-repeat;background-size: contain;">
+                                                <h3 style="color: white;text-align: center;padding: 5px;background-color: rgba(0,0,0,0.8);margin-bottom: -1px;width: 100%;">Landing Page</h3>
+                                                <!-- <i class="fa fa-linkedin-square" aria-hidden="true"></i> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="face face2">
+                                        <div class="content">
+                                            <h3>
+                                                <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
+                                            </h3>
+                                            <p style="color: white;">Landing page is a standalone web page, created specifically for a marketing or advertising campaign.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="overflow: hidden;">
+                                    <div class="face face1" >
+                                        <div class="content" >
+                                            <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/frontend/psd_webpage.svg') no-repeat;background-size: contain;">
+                                                <h3 style="color: white;text-align: center;padding: 5px;background-color: rgba(0,0,0,0.8);margin-bottom: -1px;width: 100%;">PSD to Webpage</h3>
+                                                <!-- <i class="fa fa-linkedin-square" aria-hidden="true"></i> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="face face2">
+                                        <div class="content">
+                                            <h3>
+                                                <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
+                                            </h3>
+                                            <p style="color: white;">The first ever automatic conversion of photoshop® .psd files to html.
+                                                Retain original layers including positions as html div layers.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="overflow: hidden;">
+                                    <div class="face face1" >
+                                        <div class="content" >
+                                            <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/frontend/Frontend_UI-UX.svg') no-repeat;background-size: contain;">
+                                                <h3 style="color: white;text-align: center;padding: 5px;background-color: rgba(0,0,0,0.8);margin-bottom: -1px;width: 100%;">Frontend Design</h3>
+                                                <!-- <i class="fa fa-linkedin-square" aria-hidden="true"></i> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="face face2">
+                                        <div class="content">
+                                            <h3>
+                                                <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
+                                            </h3>
+                                            <p style="color: white;">Frontend design involves creating the HTML, CSS, and presentational JavaScript code that makes up a user interface.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="overflow: hidden">
+                                    <div class="face face1" >
+                                        <div class="content" >
+                                            <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/frontend/animated_webpage.svg') no-repeat;background-size: contain;">
+                                                <h3 style="color: white;text-align: center;padding: 5px;background-color: rgba(0,0,0,0.8);margin-bottom: -1px;width: 100%;">Animated Design</h3>
+                                                <!-- <i class="fa fa-linkedin-square" aria-hidden="true"></i> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="face face2">
+                                        <div class="content">
+                                            <h3>
+                                                <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
+                                            </h3>
+                                            <p style="color: white;">Create images and effects for movies, television, websites and video games. It also coordinates projects and animators to produce 3D animation.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                                <!-- <div style="width: 100%;margin-top: -10vh;display: flex;justify-content: space-around;">
+                                    <div class="card" style="overflow: hidden;">
+                                        <div class="face face1" >
+                                            <div class="content" >
+                                                <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/frontend/Frontend_UI-UX.svg') no-repeat;background-size: contain;">
+                                                    <h3 style="color: white;text-align: center;padding: 5px;background-color: rgba(0,0,0,0.8);margin-bottom: -1px;width: 100%;">Frontend Design</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="face face2">
+                                            <div class="content">
+                                                <h3>
+                                                    <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
+                                                </h3>
+                                                <p style="color: white;">Frontend design involves creating the HTML, CSS, and presentational JavaScript code that makes up a user interface.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card" style="overflow: hidden">
+                                        <div class="face face1" >
+                                            <div class="content" >
+                                                <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/frontend/animated_webpage.svg') no-repeat;background-size: contain;">
+                                                    <h3 style="color: white;text-align: center;padding: 5px;background-color: rgba(0,0,0,0.8);margin-bottom: -1px;width: 100%;">Animated Design</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="face face2">
+                                            <div class="content">
+                                                <h3>
+                                                    <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
+                                                </h3>
+                                                <p style="color: white;">Create images and effects for movies, television, websites and video games. It also coordinates projects and animators to produce 3D animation.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            <!-- </section> -->
+            
+            
+            
+        </div>
+
+        <!-- Database -->
+        <div style="width: 100%;height: 100%;">
+            <div class="services_page" style="color: white;width: 100%;height: 100%;">
+                <div style="width: 100%;height: 15%;background-color: rgb(162,32,164);">
+                    <div style="text-align: center;font-size: xx-large;height: 100%;display: flex;flex-direction: column;justify-content: center;">
+                            Database Designing
+                    </div>
+                    <div style="width: 100%;height: 85vh;display: flex;">
+                        <div style="width: 50%;height: 100%;display: flex;justify-content: center;align-items: center;">
+                            <img src="./isometric/database.jpg" style="width: 100%;max-height: 100%;">
+                        </div>
+                        <div style="width: 50%;height: 100%;background-color: #020959 ;">
+                            
+                            <div class="container" style="height: 100%;width: 100%;display: flex;justify-content: center;align-items: center;">
+                                
+                                <div style="width: 100%;margin-top: -5vh;display: flex;justify-content: space-around;align-items: center;">
+                                    <div class="card" style="overflow: hidden;">
+                                        <div class="face face1" >
+                                            <div class="content" >
+                                                <div class="icon" style="display: flex;align-items: center;justify-content: center;background: url('./svg/frontend/landing_page.svg') no-repeat;background-size: contain;display: flex;justify-content: center;align-items: flex-end;">
+                                                    <h3 style="color: white;text-align: center;padding: 5px;background-color: rgba(0,0,0,0.8);margin-bottom: -1px;width: 100%;">MySQL/MongoDB Database Design</h3>
+                                                    <!-- <i class="fa fa-linkedin-square" aria-hidden="true"></i> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="face face2">
+                                            <div class="content">
+                                                <h3>
+                                                    <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
+                                                </h3>
+                                                <p style="color: white;">Design your database using latest technology like MySQL/MongoDB.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card" style="overflow: hidden;">
+                                        <div class="face face1" >
+                                            <div class="content" >
+                                                <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/frontend/psd_webpage.svg') no-repeat;background-size: contain;">
+                                                    <h3 style="color: white;text-align: center;padding: 5px;background-color: rgba(0,0,0,0.8);margin-bottom: -1px;width: 100%;">Database Schema Design</h3>
+                                                    <!-- <i class="fa fa-linkedin-square" aria-hidden="true"></i> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="face face2">
+                                            <div class="content">
+                                                <h3>
+                                                    <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
+                                                </h3>
+                                                <p style="color: white;">We will construct a better frame work for data management.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Backend -->
+        <div style="height: 100%;width: 100%;overflow: hidden;">
+            <div style="width: 100%;height: 15%;font-size: xx-large;display: flex;justify-content: center;align-items: center;background-color: #111;color: white;"> Backend Development </div>
+            <div style="width: 100%;height: 85%;">
+                <div style="display: flex;justify-content: center;align-items: center;flex-direction: row;" >
+                    <div style="height: 100%;width: 50%;display: flex;justify-content: center;align-items: center;flex-wrap: wrap;">
+                        <div class="container" style="justify-content: space-around;align-items: center;flex-wrap: wrap;">
+                            
+                            <div style="width: 100%;margin-top: -10vh;display: flex;justify-content: space-around;">
+                                <div class="card" style="overflow: hidden;">
+                                    <div class="face face1" >
+                                        <div class="content" >
+                                            <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/Backend/authentication.svg') no-repeat;background-size: cover;">
+                                                <h3 style="color: white;padding: 5px;background-color: rgba(0,0,0,0.8);margin-bottom: -1px;width: 100%;text-align: center">LogIn/SignUp(Authentication)</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="face face2">
+                                        <div class="content">
+                                            <h3>
+                                                <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
+                                            </h3>
+                                            <p>A quick login/signup page will give personalised touch to your website.So it should be designed properly.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="overflow: hidden;">
+                                    <div class="face face1" >
+                                        <div class="content" >
+                                            <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/Backend/database.svg') no-repeat;background-size: contain;">
+                                                <h3 style="color: white;padding: 5px;background-color: rgba(0,0,0,0.8);margin-bottom: -1px;width: 100%;text-align: center">Backend Database Design</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="face face2">
+                                        <div class="content">
+                                            <h3>
+                                                <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
+                                            </h3>
+                                            <p>Design different database according to client's requirements.</p>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                            </div>
+                            <div style="width: 100%;margin-top: -20vh;display: flex;justify-content: space-around;">
+                                <div class="card" style="overflow: hidden;">
+                                    <div class="face face1" >
+                                        <div class="content" >
+                                            <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/Backend/email_message.svg') no-repeat;background-size: cover;">
+                                                <h3 style="color: white;padding: 5px;background-color: rgba(0,0,0,0.8);margin-bottom: -1px;width: 100%;text-align: center">Contact Service</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="face face2">
+                                        <div class="content">
+                                            <h3>
+                                                <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
+                                            </h3>
+                                            <p>A bad contact details can ruin your business so we dwsign it in a appropriate way.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                        </div>
+            
+            
+                    </div>
+                    <div style="height: 100%;width: 50%;display: flex;justify-content: center;align-items: center;">
+                        <img src="./isometric/Backend.jpg" alt="backend"  style="width: 100%;height: 80%;">
+                
+                    </div>
+                    
+            
+                </div>
+            </div>
+        </div>
+
+        <!-- API -->
+        <div style="height: 100%;width: 100%;overflow: hidden;">
+            <div style="width: 100%;height: 15%;font-size: xx-large;display: flex;justify-content: center;align-items: center;background-color: #111;color: white;"> API INTEGRATION </div>
+            <div style="width: 100%;height: 85%;">
+                <div style="display: flex;justify-content: center;align-items: center;flex-direction: row;background: linear-gradient(#21186B, #10064D) ;width: 100%;height: 100%;" >
+                    <div style="height: 100%;width: 50%;display: flex;justify-content: center;align-items: center;flex-wrap: wrap;">
+                        <div class="container" style="justify-content: space-around;align-items: center;flex-wrap: wrap;">
+                            
+                            <div style="width: 100%;margin-top: -15vh;display: flex;justify-content: space-around;">
+                                <div class="card" style="overflow: hidden;">
+                                    <div class="face face1" >
+                                        <div class="content" >
+                                            <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/API/api_development.svg') no-repeat;background-size: contain;background-position: center;">
+                                                <h3 style="color: white;border-radius: 5px;padding: 5px;background-color: rgba(0,0,0,0.8);margin-bottom: -1px;width: 100%;text-align: center">API Endpoints Development</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="face face2">
+                                        <div class="content">
+                                            <h3>
+                                                <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
+                                            </h3>
+                                            <p>Its point of entry in a communication channel when two systems are interacting. Develope it smoothly with us.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="overflow: hidden;">
+                                    <div class="face face1" >
+                                        <div class="content" >
+                                            <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/API/api_integration.svg') no-repeat;background-size: contain;">
+                                                <h3 style="color: white;border-radius: 5px;padding: 5px;background-color: rgba(0,0,0,0.8);margin-bottom: -1px;width: 100%;text-align: center">API Integration</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="face face2">
+                                        <div class="content">
+                                            <h3>
+                                                <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
+                                            </h3>
+                                            <p> API enables interaction between data, applications, and devices. It delivers data and facilitates connectivity between devices and programs.</p>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                            </div>
+                            <div style="width: 100%;margin-top: -15vh;display: flex;justify-content: space-around;">
+                                <div class="card" style="overflow: hidden;">
+                                    <div class="face face1" >
+                                        <div class="content" >
+                                            <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/API/chatbot.svg') no-repeat;background-size: contain;">
+                                                <h3 style="color: white;border-radius: 5px;padding: 5px;background-color: rgba(0,0,0,0.8);margin-bottom: -1px;width: 100%;text-align: center">ChatBot Integration</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="face face2">
+                                        <div class="content">
+                                            <h3>
+                                                <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
+                                            </h3>
+                                            <p>Greet your customers and automatically filter spammy messages.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                        </div>
+            
+            
+                    </div>
+                    <div style="height: 100%;width: 50%;display: flex;justify-content: center;align-items: center;">
+                        <img src="./Isometric/API.jpg" style="max-width: 100%;max-height: 100%;">
+                
+                    </div>
+                    
+            
+                </div>
+            </div>
+        </div>
+
+        <!-- Cloud -->
+        <div style="width: 100%;height: 100%;">
+            <!-- <section> -->
+                <div class="services_page" style="color: white;width: 100%;height: 100%;">
+                    <div style="width: 100%;height: 15%;background-color: #13B7FE;">
+                        <div style="text-align: center;font-size: xx-large;height: 100%;display: flex;flex-direction: column;justify-content: center;">Cloud Solutions
+                        </div>
+                    </div>
+                    <div style="width: 100%;height: 85%;display: flex;">
+                        <div style="width: 50%;height: 100%;display: flex;justify-content: center;align-items: center;">
+                            <img src="./isometric/cloud.jpg" style="width: 100%;max-height: 100%;">
+                        </div>
+                        <div style="width: 50%;height: 100%;background-color: #020959 ;">
+                            
+                            <div class="container" style="height: 100%;width: 100%;display: flex;justify-content: center;align-items: center;">
+                                
+                                <div style="width: 100%;height: 100%;display: flex;justify-content: space-around;align-items: center;">
+                                    <div class="card" style="overflow: hidden;">
+                                        <div class="face face1" >
+                                            <div class="content" >
+                                                <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/frontend/landing_page.svg') no-repeat;background-size: contain;">
+                                                    <h3 style="color: white;border-radius: 5px;padding: 5px;background-color: rgba(0,0,0,0.8);margin-bottom: -1px;width: 100%;text-align: center">Deployment</h3>
+                                                    <!-- <i class="fa fa-linkedin-square" aria-hidden="true"></i> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="face face2">
+                                            <div class="content">
+                                                <h3>
+                                                    <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
+                                                </h3>
+                                                <p style="color: white;">Deployment in AWS/Heroku/Google cloud/Digit al ocean.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <!--<div class="card" style="overflow: hidden;">
+                                        <div class="face face1" >
+                                            <div class="content" >
+                                                <div class="icon" style="display: flex;align-items: center;justify-content: center;background: url('./svg/frontend/psd_webpage.svg') no-repeat;background-size: contain;">
+                                                    <h3 style="color: white;border-radius: 5px;padding: 5px;background-color: rgba(0,0,0,0.8);">PSD to Webpage</h3>
+                                                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="face face2">
+                                            <div class="content">
+                                                <h3>
+                                                    <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
+                                                </h3>
+                                                <p style="color: white;">The first ever automatic conversion of photoshop® .psd files to html.
+                                                    Retain original layers including positions as html div layers.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                                
+                                
+                                <div style="width: 100%;margin-top: -10vh;display: flex;justify-content: space-around;">
+                                    <div class="card" style="overflow: hidden;">
+                                        <div class="face face1" >
+                                            <div class="content" >
+                                                <div class="icon" style="display: flex;align-items: center;justify-content: center;background: url('./svg/frontend/Frontend_UI-UX.svg') no-repeat;background-size: contain;">
+                                                    <h3 style="color: white;border-radius: 5px;padding: 5px;background-color: rgba(0,0,0,0.8);">Frontend Design</h3>
+                                                    <i class="fa fa-linkedin-square" aria-hidden="true"></i> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="face face2">
+                                            <div class="content">
+                                                <h3>
+                                                    <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
+                                                </h3>
+                                                <p style="color: white;">Frontend design involves creating the HTML, CSS, and presentational JavaScript code that makes up a user interface.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card" style="overflow: hidden">
+                                        <div class="face face1" >
+                                            <div class="content" >
+                                                <div class="icon" style="display: flex;align-items: center;justify-content: center;background: url('./svg/frontend/animated_webpage.svg') no-repeat;background-size: contain;">
+                                                    <h3 style="color: white;border-radius: 5px;padding: 5px;background-color: rgba(0,0,0,0.8);">Animated Design</h3>
+                                                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="face face2">
+                                            <div class="content">
+                                                <h3>
+                                                    <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
+                                                </h3>
+                                                <p style="color: white;">Create images and effects for movies, television, websites and video games. It also coordinates projects and animators to produce 3D animation.</p>
+                                            </div>
+                                        </div>
+                                    </div>-->
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- </section> -->
+        </div>
+
+        <!-- Wordpress -->
+        <div style="width: 100%;height: 100%;overflow: hidden;">
+            <div style="height: 100vh;width: 100%;overflow: hidden;">
+                <div style="width: 100%;height: 15%;font-size: xx-large;display: flex;justify-content: center;align-items: center;background-color: #111;color: white;">WordPress </div>
+                <div style="width: 100%;height: 85vh;">
+                    
+                    <div style="display: flex;justify-content: center;align-items: center;flex-direction: row;" >
+                        <div style="height: 100%;width: 50%;display: flex;justify-content: center;align-items: center;">
+                            <img src="./Isometric/wordpress.png" alt="backend"  style="width: 100%;height: 90%;;">
+                    
+                        </div>
+                        <div style="height: 100%;width: 50%;display: flex;justify-content: center;align-items: center;flex-wrap: wrap;background-color: #F7F7F7;">
+                            <div class="container" style="justify-content: space-around;align-items: center;flex-wrap: wrap;">
+                                
+                                <div style="width: 100%;margin-top: -10vh;display: flex;justify-content: space-around;">
+                                    <div class="card" style="overflow: hidden;">
+                                        <div class="face face1" >
+                                            <div class="content" >
+                                                <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/Wordpress/wordpress.svg') no-repeat;background-size: contain;">
+                                                    <h3 style="color: white;border-radius: 5px;padding: 5px;background-color: rgba(0,0,0,0.8);">WordPress Development</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="face face2">
+                                            <div class="content">
+                                                <h3>
+                                                    <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
+                                                </h3>
+                                                <p>Design your required website in wordpress with us.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card" style="overflow: hidden;">
+                                        <div class="face face1" >
+                                            <div class="content" >
+                                                <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/Wordpress/plug_in.svg') no-repeat;background-size: contain;">
+                                                    <h3 style="color: white;border-radius: 5px;padding: 5px;background-color: rgba(0,0,0,0.8);">WordPressPlugIn</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="face face2">
+                                            <div class="content">
+                                                <h3>
+                                                    <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
+                                                </h3>
+                                                <p>We will design additional plugins for spacific uses.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                </div>
+                                <div style="width: 100%;margin-top: -20vh;display: flex;justify-content: space-around;">
+                                    <div class="card" style="overflow: hidden;">
+                                        <div class="face face1" >
+                                            <div class="content" >
+                                                <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/Wordpress/modification.svg') no-repeat;background-size: contain;">
+                                                    <h3 style="color: white;border-radius: 5px;padding: 5px;background-color: rgba(0,0,0,0.8);">WordPress Modification</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="face face2">
+                                            <div class="content">
+                                                <h3>
+                                                    <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
+                                                </h3>
+                                                <p>We can modify your WordPress website according to your requirements.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                                
+                            </div>
+                
+                
+                        </div>
+                        
+                        
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Full Stack -->
+        <div style="width: 100%;height: 100%;">
+            <!-- <section> -->
+                <div class="services_page" style="color: white;width: 100%;height: 100%;">
+                    <div style="width: 100%;height: 15%;background-color: rgb(162,32,164);">
+                        <div style="text-align: center;font-size: xx-large;height: 100%;display: flex;flex-direction: column;justify-content: center;">Full Stack Development
+                        </div>
+                    </div>
+
+                    <div style="width: 100%;height: 85%;display: flex;">
+                        <div style="width: 50%;height: 100%;display: flex;justify-content: center;align-items: center;">
+                            <img src="./isometric/full_stack.jpg" style="width: 100%;height: 100%;">
+                        </div>
+                        <div style="width: 50%;height: 100%;background-color: #010753 ;">
+                            
+                            <div class="container" style="max-height: 100%;width: 100%;">
+                                
+                                <div style="width: 100%;margin-top: -5vh;display: flex;justify-content: space-around;">
+                                    <div class="card" style="overflow: hidden;">
+                                        <div class="face face1" >
+                                            <div class="content" >
+                                                <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/full_stack/e-commerce.svg') no-repeat;background-size: contain;">
+                                                    <h3 style="color: white;text-align: center;padding: 5px;background-color: rgba(0,0,0,0.8);margin-bottom: -1px;width: 100%;">Shopping Site</h3>
+                                                    <!-- <i class="fa fa-linkedin-square" aria-hidden="true"></i> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="face face2">
+                                            <div class="content">
+                                                <h3>
+                                                    <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
+                                                </h3>
+                                                <p style="color: white;">Landing page is a standalone web page, created specifically for a marketing or advertising campaign.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card" style="overflow: hidden;">
+                                        <div class="face face1" >
+                                            <div class="content" >
+                                                <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/full_stack/portfolio.svg') no-repeat;background-size: contain;">
+                                                    <h3 style="color: white;text-align: center;padding: 5px;background-color: rgba(0,0,0,0.8);margin-bottom: -1px;width: 100%;">Portfolio/Fashion Design</h3>
+                                                    <!-- <i class="fa fa-linkedin-square" aria-hidden="true"></i> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="face face2">
+                                            <div class="content">
+                                                <h3>
+                                                    <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
+                                                </h3>
+                                                <p style="color: white;">Landing page is a standalone web page, created specifically for a marketing or advertising campaign.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                                
+                                
+                                <div style="width: 100%;margin-top: -20vh;display: flex;justify-content: space-around;">
+                                    <div class="card" style="overflow: hidden;">
+                                        <div class="face face1" >
+                                            <div class="content" >
+                                                <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/full_stack/e-education.svg') no-repeat;background-size: contain;">
+                                                    <h3 style="color: white;text-align: center;padding: 5px;background-color: rgba(0,0,0,0.8);margin-bottom: -1px;width: 100%;">e-Education</h3>
+                                                    <!-- <i class="fa fa-linkedin-square" aria-hidden="true"></i> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="face face2">
+                                            <div class="content">
+                                                <h3>
+                                                    <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
+                                                </h3>
+                                                <p style="color: white;">Landing page is a standalone web page, created specifically for a marketing or advertising campaign.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card" style="overflow: hidden;">
+                                        <div class="face face1" >
+                                            <div class="content" >
+                                                <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/full_stack/blogging.svg') no-repeat;background-size: contain;">
+                                                    <h3 style="color: white;text-align: center;padding: 5px;background-color: rgba(0,0,0,0.8);margin-bottom: -1px;width: 100%;">Blog/Article Site</h3>
+                                                    <!-- <i class="fa fa-linkedin-square" aria-hidden="true"></i> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="face face2">
+                                            <div class="content">
+                                                <h3>
+                                                    <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
+                                                </h3>
+                                                <p style="color: white;">Landing page is a standalone web page, created specifically for a marketing or advertising campaign.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            <!-- </section> -->
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <section>
     <div style="height: 100vh;width: 100vw;border: 1px solid black;display: flex;justify-content: center;align-items: center;">
         <div style="display: flex;justify-content: space-around;height: 90vh; background-image: url('Images\images.jpeg');">

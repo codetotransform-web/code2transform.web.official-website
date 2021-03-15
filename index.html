@@ -6,1101 +6,850 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>code2transform</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/landing_page.css">
     <link rel="stylesheet" href="./css/services.css">
-
+    <link rel="stylesheet" href="./css/technology.css">
+    <link rel="stylesheet" href="./css/client.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <!-- <link rel="stylesheet" href="./css/media.css"> -->
+    <style>
+        body{
+            width: 100vw;
+            /* overflow: hidden; */
+        }
+        h1,p{
+            padding: 0;
+            margin: 0;
+        }
+        
+    </style>
 <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
 
 <!-- fonts -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
     
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+    <script src="./swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
     
     
 </head>
 <body>
-    <div id="landing_page" style="min-height: 100vh;padding: 0;">
+    
+    <!-- Landing page -->
+    <div class="landing_page" id="landing_page" style="">
         <!-- top menu -->
-        <div style="display: flex;justify-content: space-around;align-items: center;height: 10vh;margin: 0;padding: 0;background-color: black;">
-            <!-- Logo -->
-            <div style="width: 50%;display: flex;justify-content: start;">
-                <h1 style="padding-left: 15%;color: white;">code2transform</h1>
-            </div>
-            <!-- Menu links -->
-            <div style="width: 50%;">
-                <div style="display: flex;justify-content: space-around;align-items: center;height: 100%;">
-                    <a href="#" style="color: white;text-decoration: none;display: flex;justify-content: center;align-items: center;">Home</a>
-                    <a href="#" style="color: white;text-decoration: none;display: flex;justify-content: center;align-items: center;">Services</a>
-                    <a href="#" style="color: white;text-decoration: none;display: flex;justify-content: center;align-items: center;">Technology</a>
-                    <a href="#" style="color: white;text-decoration: none;display: flex;justify-content: center;align-items: center;">Contact</a>
-                </div>
-            </div>
-        </div>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">code2transform</label>
+            <ul>
+              <li><a class="active" href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Feedback</a></li>
+            </ul>
+        </nav>
         <!-- Landing page content -->
 
         <!-- Company Branding -->
-        <div style="width: 100vw;margin-top: 5%;">
-            <div style="width: 50%;color: white;">
-                <div style="font-size: 5rem;font-family: 'Times New Roman', Times, serif;letter-spacing: 5px;text-align: center;">code2transform</div>
-                <div style="text-align: center;letter-spacing: 5px;margin-top: -0.5rem;">TRANSFORM YOUR IMAGINATION</div>
+        <div class="cmp_branding">
+            <div style="">
+                <div class="cpm_name">code2transform</div>
+                <div class="cmp_tagline">TRANSFORM YOUR IMAGINATION</div>
             </div>
         </div>
 
         <!-- Product Description -->
-        <div style="width: 100vw;margin-top: 25vh;">
-            <div style="width: 50%;color: white;display: flex;flex-direction: column;align-items: center;flex-wrap: wrap;">
-                <div style="text-align: center;font-size: larger;letter-spacing: 3px;width: 80%;">Bring tour Services online with the stunning websites which can reach <span>46,000</span> MILLIONS of user using Internet.</div>
+        <div class="cmp_description">
+            <div>
+                <div>Bring tour Services online with the stunning websites which can reach <span>46,000</span> MILLIONS of user using Internet.</div>
             </div>
         </div>
 
         <!-- Buttons -->
-        <div style="width: 50vw;display: flex;justify-content: space-evenly;margin: 3vh 0;">
-            <a class="btn_1" style="font-size: large;color: white;text-decoration: none;padding: 20px 50px;cursor:pointer;border: 1px solid white;">Services</a>
-            <a style="font-size: large;color: rgb(32, 32, 32);text-decoration: none;padding: 20px 50px;background-color: aqua;cursor:pointer">Contact Us</a>
+        <div class="landing_page_btn_container">
+            <a class="btn_1">Services</a>
+            <a class="btn_2">Contact Us</a>
         </div>
         <!-- Image -->
-        <div style="width: 100vw;margin-top: 15vh;padding: 0;background: linear-gradient(rgba(10,10,10,0) 0%,rgba(0,0,0,0.4) 30%, rgba(255,255,255,1));">
-            <img style="display: block;width: 100%;margin-bottom: 0;padding: 0;" src="./websites.png">
+        <div class="landing_page_end_image" style="">
+            <img src="./websites.png">
         </div>
         
     </div>
 
     <!-- Services -->
-    <div style="height: 100vh;width: 100vw;display: flex;justify-content: center;align-items: center;">
-        <div style="display: flex;justify-content: space-around;height: 100%;">
-            <div style="width: 10vw;height: 100%;display: flex;align-items: center;justify-content: center;padding: 0;">
-                <div style="margin: 0;transform: rotateZ(-90deg);"><div style="display: block;font-size: 5rem;">Services</div></div>
-            </div>
-            <div class="no_scroll_bar" style="width: 90vw;overflow: auto;height: 100%;">
-                <!-- Web Design -->
-                <div style="width: 100%;height: 100%;">
-                    <!-- <section> -->
-                        <div class="services_page" style="color: white;width: 100%;height: 100%;">
-                            <div style="width: 100%;height: 10%;background-color: #ff0057;">
-                                <div style="text-align: center;font-size: xx-large;height: 100%;display: flex;flex-direction: column;justify-content: center;">Web Designing
+    <div style="width: 100vw;">
+        <div class="split">
+            <div class="split_subject" style="">Services</div>
+        
+            <div class="split_body">
+                <div class="swiper-container swiper-container_services">
+                    <div class="swiper-wrapper">
+                        <!-- Web Designing -->
+                        <div class="swiper-slide">
+                            <div class="split_heading" style="color: white;">Web Designing</div>
+                            <div class="split_content">
+                                <div class="split_content_isometric">
+                                    <img src="./isometric/webdesign.svg">
                                 </div>
-                            </div>
-                            <div style="width: 100%;height: 90%;display: flex;">
-                                <div style="width: 40%;height: 100%;background-color: #111 ;display: flex;justify-content: center;align-items: center;">
-                                    <img src="./isometric/webdesign.svg" style="max-width: 100%;height: 100%;">
-                                </div>
-                                <div style="width: 60%;height: 100%;background-color: #111 ;">
-                                    
-                                    <div class="container" style="max-height: 100%;width: 100%;">
-                                        
-                                        <div style="width: 100%;margin-top: -5vh;display: flex;justify-content: space-around;">
-                                            <div class="card" style="overflow: hidden;">
-                                                <div class="face face1" >
-                                                    <div class="content" >
-                                                        <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/frontend/landing_page.svg') no-repeat;background-size: contain;">
-                                                            <h3 style="color: white;text-align: center;padding: 5px;background-color: rgba(0,0,0,0.8);margin-bottom: -1px;width: 100%;">Landing Page</h3>
-                                                            <!-- <i class="fa fa-linkedin-square" aria-hidden="true"></i> -->
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="face face2">
-                                                    <div class="content">
-                                                        <h3>
-                                                            <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
-                                                        </h3>
-                                                        <p style="color: white;">Landing page is a standalone web page, created specifically for a marketing or advertising campaign.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card" style="overflow: hidden;">
-                                                <div class="face face1" >
-                                                    <div class="content" >
-                                                        <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/frontend/psd_webpage.svg') no-repeat;background-size: contain;">
-                                                            <h3 style="color: white;text-align: center;padding: 5px;background-color: rgba(0,0,0,0.8);margin-bottom: -1px;width: 100%;">PSD to Webpage</h3>
-                                                            <!-- <i class="fa fa-linkedin-square" aria-hidden="true"></i> -->
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="face face2">
-                                                    <div class="content">
-                                                        <h3>
-                                                            <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
-                                                        </h3>
-                                                        <p style="color: white;">The first ever automatic conversion of photoshop® .psd files to html.
-                                                            Retain original layers including positions as html div layers.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
+                                <div class="split_content_card_container">
+                                    <div class="custom_card" style="">
+                                        <div class="face_up">
+                                            <div class="card_heading">Landing Page</div>
+                                            <img src="./svg/frontend/landing_page.svg" style="max-width: 100%;max-height: 100%;">
                                         </div>
-                                        
-                                        
-                                        
-                                        <div style="width: 100%;margin-top: -10vh;display: flex;justify-content: space-around;">
-                                            <div class="card" style="overflow: hidden;">
-                                                <div class="face face1" >
-                                                    <div class="content" >
-                                                        <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/frontend/Frontend_UI-UX.svg') no-repeat;background-size: contain;">
-                                                            <h3 style="color: white;text-align: center;padding: 5px;background-color: rgba(0,0,0,0.8);margin-bottom: -1px;width: 100%;">Frontend Design</h3>
-                                                            <!-- <i class="fa fa-linkedin-square" aria-hidden="true"></i> -->
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="face face2">
-                                                    <div class="content">
-                                                        <h3>
-                                                            <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
-                                                        </h3>
-                                                        <p style="color: white;">Frontend design involves creating the HTML, CSS, and presentational JavaScript code that makes up a user interface.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card" style="overflow: hidden">
-                                                <div class="face face1" >
-                                                    <div class="content" >
-                                                        <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/frontend/animated_webpage.svg') no-repeat;background-size: contain;">
-                                                            <h3 style="color: white;text-align: center;padding: 5px;background-color: rgba(0,0,0,0.8);margin-bottom: -1px;width: 100%;">Animated Design</h3>
-                                                            <!-- <i class="fa fa-linkedin-square" aria-hidden="true"></i> -->
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="face face2">
-                                                    <div class="content">
-                                                        <h3>
-                                                            <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
-                                                        </h3>
-                                                        <p style="color: white;">Create images and effects for movies, television, websites and video games. It also coordinates projects and animators to produce 3D animation.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        
+                                        <div class="face_down">Landing page is a standalone web page, created specifically for a marketing or advertising campaign.</div>
                                     </div>
-                                </div></div>
-                            
-                            
-                        </div>
-                    <!-- </section> -->
-                    
-                    
-                    
-                </div>
-
-                <!-- Database -->
-                <div style="width: 100%;height: 100%;">
-                    <div class="services_page" style="color: white;width: 100%;height: 100%;">
-                        <div style="width: 100%;height: 15%;background-color: rgb(162,32,164);">
-                            <div style="text-align: center;font-size: xx-large;height: 100%;display: flex;flex-direction: column;justify-content: center;">Database Designing
-                            </div>
-                        <div style="width: 100%;height: 85vh;display: flex;">
-                            <div style="width: 50%;height: 100%;display: flex;justify-content: center;align-items: center;">
-                                <img src="./isometric/database.jpg" style="width: 100%;max-height: 100%;">
-                            </div>
-                            <div style="width: 50%;height: 100%;background-color: #020959 ;">
-                                
-                                <div class="container" style="height: 100%;width: 100%;display: flex;justify-content: center;align-items: center;">
-                                    
-                                    <div style="width: 100%;margin-top: -5vh;display: flex;justify-content: space-around;align-items: center;">
-                                        <div class="card" style="overflow: hidden;">
-                                            <div class="face face1" >
-                                                <div class="content" >
-                                                    <div class="icon" style="display: flex;align-items: center;justify-content: center;background: url('./svg/frontend/landing_page.svg') no-repeat;background-size: contain;display: flex;justify-content: center;align-items: flex-end;">
-                                                        <h3 style="color: white;text-align: center;padding: 5px;background-color: rgba(0,0,0,0.8);margin-bottom: -1px;width: 100%;">MySQL/MongoDB Database Design</h3>
-                                                        <!-- <i class="fa fa-linkedin-square" aria-hidden="true"></i> -->
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="face face2">
-                                                <div class="content">
-                                                    <h3>
-                                                        <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
-                                                    </h3>
-                                                    <p style="color: white;">Design your database using latest technology like MySQL/MongoDB.</p>
-                                                </div>
-                                            </div>
+                                    <div class="custom_card" style="">
+                                        <div class="face_up">
+                                            <div class="card_heading">PSD to Webpage</div>
+                                            <img src="./svg/frontend/psd_webpage.svg" style="max-width: 100%;max-height: 100%;">
                                         </div>
-                                        <div class="card" style="overflow: hidden;">
-                                            <div class="face face1" >
-                                                <div class="content" >
-                                                    <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/frontend/psd_webpage.svg') no-repeat;background-size: contain;">
-                                                        <h3 style="color: white;text-align: center;padding: 5px;background-color: rgba(0,0,0,0.8);margin-bottom: -1px;width: 100%;">Database Schema Design</h3>
-                                                        <!-- <i class="fa fa-linkedin-square" aria-hidden="true"></i> -->
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="face face2">
-                                                <div class="content">
-                                                    <h3>
-                                                        <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
-                                                    </h3>
-                                                    <p style="color: white;">We will construct a better frame work for data management.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
+                                        <div class="face_down">Conversion of photoshop® .psd files to html.</div>
                                     </div>
-                                    
-                                    
+                                    <div class="custom_card" style="">
+                                        <div class="face_up">
+                                            <div class="card_heading">Frontend Design</div>
+                                            <img src="./svg/frontend/Frontend_UI-UX.svg" style="max-width: 100%;max-height: 100%;">
+                                        </div>
+                                        <div class="face_down">Involves creating the HTML,CSS,and presentational JavaScript code that makes up a user interface.</div>
+                                    </div>
+                                    <div class="custom_card" style="">
+                                        <div class="face_up">
+                                            <div class="card_heading">Animated Design</div>
+                                            <img src="./svg/frontend/animated_webpage.svg" style="max-width: 100%;max-height: 100%;">
+                                        </div>
+                                        <div class="face_down">Create images and effects for movies, television, websites and video games.</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- Database Designing -->
+                        <div class="swiper-slide">
+                            <div class="split_heading" style="color: white;">Database Designing</div>
+                            <div class="split_content">
+                                <div class="split_content_isometric">
+                                    <img src="./isometric/database.jpg">
+                                </div>
+                                <div class="split_content_card_container">
+                                    <div class="custom_card" style="">
+                                        <div class="face_up">
+                                            <div class="card_heading">MySQL/MongoDB</div>
+                                            <img src="./svg/frontend/landing_page.svg" style="max-width: 100%;max-height: 100%;">
+                                        </div>
+                                        <div class="face_down">Design your database using latest technology like MySQL/MongoDB.</div>
+                                    </div>
+                                    <div class="custom_card" style="">
+                                        <div class="face_up">
+                                            <div class="card_heading">Database Schema Design</div>
+                                            <img src="./svg/frontend/psd_webpage.svg" style="max-width: 100%;max-height: 100%;">
+                                        </div>
+                                        <div class="face_down">We will construct a better frame work for data management.</div>
+                                    </div>
+                                    <!-- <div class="custom_card" style="">
+                                        <div class="face_up">
+                                            <div class="card_heading">Web Designing</div>
+                                            <img src="./svg/frontend/Frontend_UI-UX.svg" style="max-width: 100%;max-height: 100%;">
+                                        </div>
+                                        <div class="face_down"></div>
+                                    </div>
+                                    <div class="custom_card" style="">
+                                        <div class="face_up">
+                                            <div class="card_heading">Web Designing</div>
+                                            <img src="./svg/frontend/Frontend_UI-UX.svg" style="max-width: 100%;max-height: 100%;">
+                                        </div>
+                                        <div class="face_down"></div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Backend Development -->
+                        <div class="swiper-slide">
+                            <div class="split_heading" style="color: white;">Backend Development</div>
+                            <div class="split_content">
+                                <div class="split_content_isometric">
+                                    <img src="./isometric/Backend.jpg">
+                                </div>
+                                <div class="split_content_card_container">
+                                    <div class="custom_card" style="">
+                                        <div class="face_up">
+                                            <div class="card_heading">LogIn/SignUp(Authentication)</div>
+                                            <img src="./svg/Backend/authentication.svg" style="max-width: 100%;max-height: 100%;">
+                                        </div>
+                                        <div class="face_down">A quick login/signup page will give personalised touch to your website.</div>
+                                    </div>
+                                    <div class="custom_card" style="">
+                                        <div class="face_up">
+                                            <div class="card_heading">Backend Database Design</div>
+                                            <img src="./svg/Backend/database.svg" style="max-width: 100%;max-height: 100%;">
+                                        </div>
+                                        <div class="face_down">Design different database according to client's requirements.</div>
+                                    </div>
+                                    <div class="custom_card" style="">
+                                        <div class="face_up">
+                                            <div class="card_heading">Contact Service</div>
+                                            <img src="./svg/Backend/email_message.svg" style="max-width: 100%;max-height: 100%;">
+                                        </div>
+                                        <div class="face_down">A bad contact details can ruin your business so we dwsign it in a appropriate way.</div>
+                                    </div>
+                                    <!-- <div class="custom_card" style="">
+                                        <div class="face_up">
+                                            <div class="card_heading">Web Designing</div>
+                                            <img src="./svg/frontend/Frontend_UI-UX.svg" style="max-width: 100%;max-height: 100%;">
+                                        </div>
+                                        <div class="face_down"></div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- API Integration -->
+                        <div class="swiper-slide">
+                            <div class="split_heading" style="color: white;">API Integration</div>
+                            <div class="split_content">
+                                <div class="split_content_isometric">
+                                    <img src="./Isometric/API.jpg">
+                                </div>
+                                <div class="split_content_card_container">
+                                    <div class="custom_card" style="">
+                                        <div class="face_up">
+                                            <div class="card_heading">API Endpoints Development</div>
+                                            <img src="./svg/API/api_development.svg" style="max-width: 100%;max-height: 100%;">
+                                        </div>
+                                        <div class="face_down">It is the point of entry in a communication channel when two systems are interacting.</div>
+                                    </div>
+                                    <div class="custom_card" style="">
+                                        <div class="face_up">
+                                            <div class="card_heading">API Integration</div>
+                                            <img src="./svg/API/api_integration.svg" style="max-width: 100%;max-height: 100%;">
+                                        </div>
+                                        <div class="face_down">It delivers data and facilitates connectivity between devices and programs.</div>
+                                    </div>
+                                    <div class="custom_card" style="">
+                                        <div class="face_up">
+                                            <div class="card_heading">ChatBot Integration</div>
+                                            <img src="./svg/API/chatbot.svg" style="max-width: 100%;max-height: 100%;">
+                                        </div>
+                                        <div class="face_down">Greet your customers and automatically filter spammy messages.</div>
+                                    </div>
+                                    <!-- <div class="custom_card" style="">
+                                        <div class="face_up">
+                                            <div class="card_heading">Web Designing</div>
+                                            <img src="./svg/frontend/Frontend_UI-UX.svg" style="max-width: 100%;max-height: 100%;">
+                                        </div>
+                                        <div class="face_down"></div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Cloud Solution -->
+                        <div class="swiper-slide">
+                            <div class="split_heading" style="color: white;">Cloud Solution</div>
+                            <div class="split_content">
+                                <div class="split_content_isometric">
+                                    <img src="./isometric/cloud.jpg">
+                                </div>
+                                <div class="split_content_card_container">
+                                    <div class="custom_card" style="">
+                                        <div class="face_up">
+                                            <div class="card_heading">Deployment</div>
+                                            <img src="./svg/cloud/deployment.svg" style="max-width: 100%;max-height: 100%;">
+                                        </div>
+                                        <div class="face_down">Deployment in AWS/Heroku/Google cloud/Digit al ocean.</div>
+                                    </div>
+                                    <!-- <div class="custom_card" style="">
+                                        <div class="face_up">
+                                            <div class="card_heading">Web Designing</div>
+                                            <img src="./svg/frontend/Frontend_UI-UX.svg" style="max-width: 100%;max-height: 100%;">
+                                        </div>
+                                        <div class="face_down"></div>
+                                    </div>
+                                    <div class="custom_card" style="">
+                                        <div class="face_up">
+                                            <div class="card_heading">Web Designing</div>
+                                            <img src="./svg/frontend/Frontend_UI-UX.svg" style="max-width: 100%;max-height: 100%;">
+                                        </div>
+                                        <div class="face_down"></div>
+                                    </div>
+                                    <div class="custom_card" style="">
+                                        <div class="face_up">
+                                            <div class="card_heading">Web Designing</div>
+                                            <img src="./svg/frontend/Frontend_UI-UX.svg" style="max-width: 100%;max-height: 100%;">
+                                        </div>
+                                        <div class="face_down"></div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Wordpress -->
+                        <div class="swiper-slide">
+                            <div class="split_heading" style="color: white;">Wordpress</div>
+                            <div class="split_content">
+                                <div class="split_content_isometric">
+                                    <img src="./Isometric/wordpress.png">
+                                </div>
+                                <div class="split_content_card_container">
+                                    <div class="custom_card" style="">
+                                        <div class="face_up">
+                                            <div class="card_heading">WordPress Development</div>
+                                            <img src="./svg/Wordpress/wordpress.svg" style="max-width: 100%;max-height: 100%;">
+                                        </div>
+                                        <div class="face_down">Design your required website in wordpress with us.</div>
+                                    </div>
+                                    <div class="custom_card" style="">
+                                        <div class="face_up">
+                                            <div class="card_heading">WordPressPlugIn</div>
+                                            <img src="./svg/Wordpress/plug_in.svg" style="max-width: 100%;max-height: 100%;">
+                                        </div>
+                                        <div class="face_down">We will design additional plugins for spacific uses.</div>
+                                    </div>
+                                    <div class="custom_card" style="">
+                                        <div class="face_up">
+                                            <div class="card_heading">WordPress Modification</div>
+                                            <img src="./svg/Wordpress/modification.svg" style="max-width: 100%;max-height: 100%;">
+                                        </div>
+                                        <div class="face_down">We can modify your WordPress website according to your requirements.</div>
+                                    </div>
+                                    <!-- <div class="custom_card" style="">
+                                        <div class="face_up">
+                                            <div class="card_heading">Web Designing</div>
+                                            <img src="./svg/frontend/Frontend_UI-UX.svg" style="max-width: 100%;max-height: 100%;">
+                                        </div>
+                                        <div class="face_down"></div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Full Stack Web Development -->
+                        <div class="swiper-slide">
+                            <div class="split_heading" style="color: white;font-size: x-large;">Full Stack Web Development</div>
+                            <div class="split_content">
+                                <div class="split_content_isometric">
+                                    <img src="./isometric/full_stack.jpg">
+                                </div>
+                                <div class="split_content_card_container">
+                                    <div class="custom_card" style="">
+                                        <div class="face_up">
+                                            <div class="card_heading">Shopping Site</div>
+                                            <img src="./svg/full_stack/e-commerce.svg" style="max-width: 100%;max-height: 100%;">
+                                        </div>
+                                        <div class="face_down"></div>
+                                    </div>
+                                    <div class="custom_card" style="">
+                                        <div class="face_up">
+                                            <div class="card_heading">Portfolio/Fashion Design</div>
+                                            <img src="./svg/full_stack/portfolio.svg" style="max-width: 100%;max-height: 100%;">
+                                        </div>
+                                        <div class="face_down"></div>
+                                    </div>
+                                    <div class="custom_card" style="">
+                                        <div class="face_up">
+                                            <div class="card_heading">e-Education</div>
+                                            <img src="./svg/full_stack/e-education.svg" style="max-width: 100%;max-height: 100%;">
+                                        </div>
+                                        <div class="face_down"></div>
+                                    </div>
+                                    <div class="custom_card" style="">
+                                        <div class="face_up">
+                                            <div class="card_heading">Blog/Article Site</div>
+                                            <img src="./svg/full_stack/blogging.svg" style="max-width: 100%;max-height: 100%;">
+                                        </div>
+                                        <div class="face_down"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
                     </div>
                 </div>
-
-                <!-- Backend -->
-                <div style="height: 100%;width: 100%;overflow: hidden;">
-                    <div style="width: 100%;height: 15%;font-size: xx-large;display: flex;justify-content: center;align-items: center;background-color: #111;color: white;"> Backend Development </div>
-                    <div style="width: 100%;height: 85%;">
-                        <div style="display: flex;justify-content: center;align-items: center;flex-direction: row;" >
-                            <div style="height: 100%;width: 50%;display: flex;justify-content: center;align-items: center;flex-wrap: wrap;">
-                                <div class="container" style="justify-content: space-around;align-items: center;flex-wrap: wrap;">
-                                    
-                                    <div style="width: 100%;margin-top: -10vh;display: flex;justify-content: space-around;">
-                                        <div class="card" style="overflow: hidden;">
-                                            <div class="face face1" >
-                                                <div class="content" >
-                                                    <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/Backend/authentication.svg') no-repeat;background-size: cover;">
-                                                        <h3 style="color: white;padding: 5px;background-color: rgba(0,0,0,0.8);margin-bottom: -1px;width: 100%;text-align: center">LogIn/SignUp(Authentication)</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="face face2">
-                                                <div class="content">
-                                                    <h3>
-                                                        <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
-                                                    </h3>
-                                                    <p>A quick login/signup page will give personalised touch to your website.So it should be designed properly.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card" style="overflow: hidden;">
-                                            <div class="face face1" >
-                                                <div class="content" >
-                                                    <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/Backend/database.svg') no-repeat;background-size: contain;">
-                                                        <h3 style="color: white;padding: 5px;background-color: rgba(0,0,0,0.8);margin-bottom: -1px;width: 100%;text-align: center">Backend Database Design</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="face face2">
-                                                <div class="content">
-                                                    <h3>
-                                                        <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
-                                                    </h3>
-                                                    <p>Design different database according to client's requirements.</p>
-                                                </div>
-                                            </div>
-                                        </div>
                     
-                                    </div>
-                                    <div style="width: 100%;margin-top: -20vh;display: flex;justify-content: space-around;">
-                                        <div class="card" style="overflow: hidden;">
-                                            <div class="face face1" >
-                                                <div class="content" >
-                                                    <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/Backend/email_message.svg') no-repeat;background-size: cover;">
-                                                        <h3 style="color: white;padding: 5px;background-color: rgba(0,0,0,0.8);margin-bottom: -1px;width: 100%;text-align: center">Contact Service</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="face face2">
-                                                <div class="content">
-                                                    <h3>
-                                                        <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
-                                                    </h3>
-                                                    <p>A bad contact details can ruin your business so we dwsign it in a appropriate way.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    
-                                    
-                                </div>
-                    
-                    
-                            </div>
-                            <div style="height: 100%;width: 50%;display: flex;justify-content: center;align-items: center;">
-                                <img src="./isometric/Backend.jpg" alt="backend"  style="width: 100%;height: 80%;">
-                        
-                            </div>
-                            
-                    
-                        </div>
-                    </div>
-                </div>
-
-                <!-- API -->
-                <div style="height: 100%;width: 100%;overflow: hidden;">
-                    <div style="width: 100%;height: 15%;font-size: xx-large;display: flex;justify-content: center;align-items: center;background-color: #111;color: white;"> API INTEGRATION </div>
-                    <div style="width: 100%;height: 85%;">
-                        <div style="display: flex;justify-content: center;align-items: center;flex-direction: row;background: linear-gradient(#21186B, #10064D) ;width: 100%;height: 100%;" >
-                            <div style="height: 100%;width: 50%;display: flex;justify-content: center;align-items: center;flex-wrap: wrap;">
-                                <div class="container" style="justify-content: space-around;align-items: center;flex-wrap: wrap;">
-                                    
-                                    <div style="width: 100%;margin-top: -15vh;display: flex;justify-content: space-around;">
-                                        <div class="card" style="overflow: hidden;">
-                                            <div class="face face1" >
-                                                <div class="content" >
-                                                    <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/API/api_development.svg') no-repeat;background-size: contain;background-position: center;">
-                                                        <h3 style="color: white;border-radius: 5px;padding: 5px;background-color: rgba(0,0,0,0.8);margin-bottom: -1px;width: 100%;text-align: center">API Endpoints Development</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="face face2">
-                                                <div class="content">
-                                                    <h3>
-                                                        <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
-                                                    </h3>
-                                                    <p>Its point of entry in a communication channel when two systems are interacting. Develope it smoothly with us.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card" style="overflow: hidden;">
-                                            <div class="face face1" >
-                                                <div class="content" >
-                                                    <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/API/api_integration.svg') no-repeat;background-size: contain;">
-                                                        <h3 style="color: white;border-radius: 5px;padding: 5px;background-color: rgba(0,0,0,0.8);margin-bottom: -1px;width: 100%;text-align: center">API Integration</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="face face2">
-                                                <div class="content">
-                                                    <h3>
-                                                        <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
-                                                    </h3>
-                                                    <p> API enables interaction between data, applications, and devices. It delivers data and facilitates connectivity between devices and programs.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                    
-                                    </div>
-                                    <div style="width: 100%;margin-top: -15vh;display: flex;justify-content: space-around;">
-                                        <div class="card" style="overflow: hidden;">
-                                            <div class="face face1" >
-                                                <div class="content" >
-                                                    <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/API/chatbot.svg') no-repeat;background-size: contain;">
-                                                        <h3 style="color: white;border-radius: 5px;padding: 5px;background-color: rgba(0,0,0,0.8);margin-bottom: -1px;width: 100%;text-align: center">ChatBot Integration</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="face face2">
-                                                <div class="content">
-                                                    <h3>
-                                                        <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
-                                                    </h3>
-                                                    <p>Greet your customers and automatically filter spammy messages.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    
-                                    
-                                </div>
-                    
-                    
-                            </div>
-                            <div style="height: 100%;width: 50%;display: flex;justify-content: center;align-items: center;">
-                                <img src="./Isometric/API.jpg" style="max-width: 100%;max-height: 100%;">
-                        
-                            </div>
-                            
-                    
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Cloud -->
-                <div style="width: 100%;height: 100%;">
-                    <!-- <section> -->
-                        <div class="services_page" style="color: white;width: 100%;height: 100%;">
-                            <div style="width: 100%;height: 15%;background-color: #13B7FE;">
-                                <div style="text-align: center;font-size: xx-large;height: 100%;display: flex;flex-direction: column;justify-content: center;">Cloud Solutions
-                                </div>
-                            </div>
-                            <div style="width: 100%;height: 85%;display: flex;">
-                                <div style="width: 50%;height: 100%;display: flex;justify-content: center;align-items: center;">
-                                    <img src="./isometric/cloud.jpg" style="width: 100%;max-height: 100%;">
-                                </div>
-                                <div style="width: 50%;height: 100%;background-color: #020959 ;">
-                                    
-                                    <div class="container" style="height: 100%;width: 100%;display: flex;justify-content: center;align-items: center;">
-                                        
-                                        <div style="width: 100%;height: 100%;display: flex;justify-content: space-around;align-items: center;">
-                                            <div class="card" style="overflow: hidden;">
-                                                <div class="face face1" >
-                                                    <div class="content" >
-                                                        <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/frontend/landing_page.svg') no-repeat;background-size: contain;">
-                                                            <h3 style="color: white;border-radius: 5px;padding: 5px;background-color: rgba(0,0,0,0.8);margin-bottom: -1px;width: 100%;text-align: center">Deployment</h3>
-                                                            <!-- <i class="fa fa-linkedin-square" aria-hidden="true"></i> -->
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="face face2">
-                                                    <div class="content">
-                                                        <h3>
-                                                            <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
-                                                        </h3>
-                                                        <p style="color: white;">Deployment in AWS/Heroku/Google cloud/Digit al ocean.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        <!--<div class="card" style="overflow: hidden;">
-                                                <div class="face face1" >
-                                                    <div class="content" >
-                                                        <div class="icon" style="display: flex;align-items: center;justify-content: center;background: url('./svg/frontend/psd_webpage.svg') no-repeat;background-size: contain;">
-                                                            <h3 style="color: white;border-radius: 5px;padding: 5px;background-color: rgba(0,0,0,0.8);">PSD to Webpage</h3>
-                                                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="face face2">
-                                                    <div class="content">
-                                                        <h3>
-                                                            <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
-                                                        </h3>
-                                                        <p style="color: white;">The first ever automatic conversion of photoshop® .psd files to html.
-                                                            Retain original layers including positions as html div layers.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                        </div>
-                                        
-                                        
-                                        
-                                        <div style="width: 100%;margin-top: -10vh;display: flex;justify-content: space-around;">
-                                            <div class="card" style="overflow: hidden;">
-                                                <div class="face face1" >
-                                                    <div class="content" >
-                                                        <div class="icon" style="display: flex;align-items: center;justify-content: center;background: url('./svg/frontend/Frontend_UI-UX.svg') no-repeat;background-size: contain;">
-                                                            <h3 style="color: white;border-radius: 5px;padding: 5px;background-color: rgba(0,0,0,0.8);">Frontend Design</h3>
-                                                            <i class="fa fa-linkedin-square" aria-hidden="true"></i> 
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="face face2">
-                                                    <div class="content">
-                                                        <h3>
-                                                            <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
-                                                        </h3>
-                                                        <p style="color: white;">Frontend design involves creating the HTML, CSS, and presentational JavaScript code that makes up a user interface.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card" style="overflow: hidden">
-                                                <div class="face face1" >
-                                                    <div class="content" >
-                                                        <div class="icon" style="display: flex;align-items: center;justify-content: center;background: url('./svg/frontend/animated_webpage.svg') no-repeat;background-size: contain;">
-                                                            <h3 style="color: white;border-radius: 5px;padding: 5px;background-color: rgba(0,0,0,0.8);">Animated Design</h3>
-                                                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="face face2">
-                                                    <div class="content">
-                                                        <h3>
-                                                            <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
-                                                        </h3>
-                                                        <p style="color: white;">Create images and effects for movies, television, websites and video games. It also coordinates projects and animators to produce 3D animation.</p>
-                                                    </div>
-                                                </div>
-                                            </div>-->
-                                        </div>
-                                        
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    <!-- </section> -->
-                </div>
-
-                <!-- Wordpress -->
-                <div style="width: 100%;height: 100%;overflow: hidden;">
-                    <div style="height: 100vh;width: 100%;overflow: hidden;">
-                        <div style="width: 100%;height: 15%;font-size: xx-large;display: flex;justify-content: center;align-items: center;background-color: #111;color: white;">WordPress </div>
-                        <div style="width: 100%;height: 85vh;">
-                            
-                            <div style="display: flex;justify-content: center;align-items: center;flex-direction: row;" >
-                                <div style="height: 100%;width: 50%;display: flex;justify-content: center;align-items: center;">
-                                    <img src="./Isometric/wordpress.png" alt="backend"  style="width: 100%;height: 90%;;">
-                            
-                                </div>
-                                <div style="height: 100%;width: 50%;display: flex;justify-content: center;align-items: center;flex-wrap: wrap;background-color: #F7F7F7;">
-                                    <div class="container" style="justify-content: space-around;align-items: center;flex-wrap: wrap;">
-                                        
-                                        <div style="width: 100%;margin-top: -10vh;display: flex;justify-content: space-around;">
-                                            <div class="card" style="overflow: hidden;">
-                                                <div class="face face1" >
-                                                    <div class="content" >
-                                                        <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/Wordpress/wordpress.svg') no-repeat;background-size: contain;">
-                                                            <h3 style="color: white;border-radius: 5px;padding: 5px;background-color: rgba(0,0,0,0.8);">WordPress Development</h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="face face2">
-                                                    <div class="content">
-                                                        <h3>
-                                                            <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
-                                                        </h3>
-                                                        <p>Design your required website in wordpress with us.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card" style="overflow: hidden;">
-                                                <div class="face face1" >
-                                                    <div class="content" >
-                                                        <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/Wordpress/plug_in.svg') no-repeat;background-size: contain;">
-                                                            <h3 style="color: white;border-radius: 5px;padding: 5px;background-color: rgba(0,0,0,0.8);">WordPressPlugIn</h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="face face2">
-                                                    <div class="content">
-                                                        <h3>
-                                                            <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
-                                                        </h3>
-                                                        <p>We will design additional plugins for spacific uses.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                        
-                                        </div>
-                                        <div style="width: 100%;margin-top: -20vh;display: flex;justify-content: space-around;">
-                                            <div class="card" style="overflow: hidden;">
-                                                <div class="face face1" >
-                                                    <div class="content" >
-                                                        <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/Wordpress/modification.svg') no-repeat;background-size: contain;">
-                                                            <h3 style="color: white;border-radius: 5px;padding: 5px;background-color: rgba(0,0,0,0.8);">WordPress Modification</h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="face face2">
-                                                    <div class="content">
-                                                        <h3>
-                                                            <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
-                                                        </h3>
-                                                        <p>We can modify your WordPress website according to your requirements.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        
-                                        
-                                    </div>
-                        
-                        
-                                </div>
-                                
-                                
-                        
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Full Stack -->
-                <div style="width: 100%;height: 100%;">
-                    <!-- <section> -->
-                        <div class="services_page" style="color: white;width: 100%;height: 100%;">
-                            <div style="width: 100%;height: 15%;background-color: rgb(162,32,164);">
-                                <div style="text-align: center;font-size: xx-large;height: 100%;display: flex;flex-direction: column;justify-content: center;">Full Stack Development
-                                </div>
-                            </div>
-
-                            <div style="width: 100%;height: 85%;display: flex;">
-                                <div style="width: 50%;height: 100%;display: flex;justify-content: center;align-items: center;">
-                                    <img src="./isometric/full_stack.jpg" style="width: 100%;height: 100%;">
-                                </div>
-                                <div style="width: 50%;height: 100%;background-color: #010753 ;">
-                                    
-                                    <div class="container" style="max-height: 100%;width: 100%;">
-                                        
-                                        <div style="width: 100%;margin-top: -5vh;display: flex;justify-content: space-around;">
-                                            <div class="card" style="overflow: hidden;">
-                                                <div class="face face1" >
-                                                    <div class="content" >
-                                                        <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/full_stack/e-commerce.svg') no-repeat;background-size: contain;">
-                                                            <h3 style="color: white;text-align: center;padding: 5px;background-color: rgba(0,0,0,0.8);margin-bottom: -1px;width: 100%;">Shopping Site</h3>
-                                                            <!-- <i class="fa fa-linkedin-square" aria-hidden="true"></i> -->
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="face face2">
-                                                    <div class="content">
-                                                        <h3>
-                                                            <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
-                                                        </h3>
-                                                        <p style="color: white;">Landing page is a standalone web page, created specifically for a marketing or advertising campaign.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card" style="overflow: hidden;">
-                                                <div class="face face1" >
-                                                    <div class="content" >
-                                                        <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/full_stack/portfolio.svg') no-repeat;background-size: contain;">
-                                                            <h3 style="color: white;text-align: center;padding: 5px;background-color: rgba(0,0,0,0.8);margin-bottom: -1px;width: 100%;">Portfolio/Fashion Design</h3>
-                                                            <!-- <i class="fa fa-linkedin-square" aria-hidden="true"></i> -->
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="face face2">
-                                                    <div class="content">
-                                                        <h3>
-                                                            <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
-                                                        </h3>
-                                                        <p style="color: white;">Landing page is a standalone web page, created specifically for a marketing or advertising campaign.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                        </div>
-                                        
-                                        
-                                        
-                                        <div style="width: 100%;margin-top: -20vh;display: flex;justify-content: space-around;">
-                                            <div class="card" style="overflow: hidden;">
-                                                <div class="face face1" >
-                                                    <div class="content" >
-                                                        <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/full_stack/e-education.svg') no-repeat;background-size: contain;">
-                                                            <h3 style="color: white;text-align: center;padding: 5px;background-color: rgba(0,0,0,0.8);margin-bottom: -1px;width: 100%;">e-Education</h3>
-                                                            <!-- <i class="fa fa-linkedin-square" aria-hidden="true"></i> -->
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="face face2">
-                                                    <div class="content">
-                                                        <h3>
-                                                            <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
-                                                        </h3>
-                                                        <p style="color: white;">Landing page is a standalone web page, created specifically for a marketing or advertising campaign.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card" style="overflow: hidden;">
-                                                <div class="face face1" >
-                                                    <div class="content" >
-                                                        <div class="icon" style="display: flex;align-items: flex-end;justify-content: center;background: url('./svg/full_stack/blogging.svg') no-repeat;background-size: contain;">
-                                                            <h3 style="color: white;text-align: center;padding: 5px;background-color: rgba(0,0,0,0.8);margin-bottom: -1px;width: 100%;">Blog/Article Site</h3>
-                                                            <!-- <i class="fa fa-linkedin-square" aria-hidden="true"></i> -->
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="face face2">
-                                                    <div class="content">
-                                                        <h3>
-                                                            <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank"></a>
-                                                        </h3>
-                                                        <p style="color: white;">Landing page is a standalone web page, created specifically for a marketing or advertising campaign.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            
-                        </div>
-                    <!-- </section> -->
-                </div>
+                
+                
             </div>
         </div>
     </div>
-    </div>
-    
 
     <!-- Technology -->
-    <section>
-        <div style="height: 100vh;width: 100vw;display: flex;justify-content: center;align-items: center;">
-            <div style="display: flex;justify-content: space-around;height: 100%; background-image: url('Images\images.jpeg');">
-
-                <div style="width: 90vw;display: flex;justify-content: center;align-items: center;">
-                    <div class="swiper-container1 no_scroll_bar" style="width: 100%;height: 100%;">
-                        <div class="swiper-wrapper" style="background-image: url('./isometric/technology.jpg');background-size: cover;">
-                            <div class="swiper-slide">
-                                <!-- <p>Front-end---HTML,CSS,javascript</p>
-                                <div style="width: 200px;height: 200px;border-radius: 20px;overflow: hidden;">
-                                    <div style="height: 80%;width: 100%;background-color: white;"><img src="./svg/undraw_Landing_page_re_6xev.svg" style="max-width: 100%;"></div>
-                                    <div style="height: 20%;width: 100%;background-color: black;display: flex;justify-content: center;align-items: center;">Landing Page Design</div>
-                                </div> -->
-                            </div>
-                            <div class="swiper-slide">
-                                <div style="width: 100%;height: 10%;font-size: 2rem;background-color: rgba(0,0,0,0.5);color: white;display: flex;justify-content: center;align-items: center;">Front-End Web Designing</div>
-                                <div style="width: 100%;height: 90%; display: flex;justify-content: space-around;align-items: center;flex-wrap: wrap;">
-                                    <div style="width: 100%;height: 20%;display: flex;justify-content: space-around;align-items: center;">
-                                        <div style="width: 10rem;height: 10rem;background-color: white;border-radius: 10px;display: flex;justify-content: center;align-items: center;"><img src="./technology logo/html 5.png" style="max-width: 100%;max-height: 90%;"></div>
-                                        <div style="width: 10rem;height: 10rem;background-color: white;border-radius: 10px;display: flex;justify-content: center;align-items: center;"><img src="./technology logo/css1.png" style="max-width: 100%;max-height: 90%;"></div>
-                                        <div style="width: 10rem;height: 10rem;background-color: white;border-radius: 10px;display: flex;justify-content: center;align-items: center;"><img src="./technology logo/javascript.png" style="max-width: 100%;max-height: 90%;"></div>
+    <div style="height: 100vh;width: 100vw;">
+        <div class="split split_right" >
+            <div class="split_body" >
+                <div class="swiper-container_tech no_scroll_bar" style="width: 100%;height: 100%;">
+                    <div class="swiper-wrapper" style="background-image: url('./isometric/technology.jpg');background-size: 100% 100%;">
+                        <div class="swiper-slide">
+                            
+                        </div>
+                        <!-- Front End -->
+                        <div class="swiper-slide">
+                            <div class="split_heading" style="color: white;font-size: larger;">Front-End Web Designing</div>
+                            <div class="split_content">
+                                <div class="tech_card_container">
+                                    <div style="width: 100%;display: flex;justify-content: space-around">
+                                        <div class="tech_card hcj" >
+                                            <img src="./technology logo/html 5.png" style="max-width: 100%;max-height: 90%;">
                                         </div>
-                                    <div style="width: 100%;height: 20%;display: flex;justify-content: space-around;align-items: center;">
-                                        <div style="width: 15rem;height: 10rem;background-color: black;border-radius: 10px;display: flex;justify-content: center;align-items: center;"><img src="./technology logo/react.png" style="max-width: 100%;max-height: 90%;"></div>
-                                        <div style="width: 15rem;height: 10rem;background-color: white;border-radius: 10px;display: flex;justify-content: center;align-items: center;overflow: hidden;"><img src="./technology logo/angular.jpg" style="max-width: 100%;max-height: 90%;"></div>
+                                        <div class="tech_card hcj" >
+                                            <img src="./technology logo/css1.png" style="max-width: 100%;max-height: 90%;">
+                                        </div>
+                                        <div class="tech_card hcj">
+                                            <img src="./technology logo/js.jpg" style="max-width: 100%;max-height: 90%;">
+                                        </div>
                                     </div>
                                     
-                                    
-                                </div>
-                            </div>
-                            <div class="swiper-slide" style="width: 100%;height: 100%;">
-                                <div style="width: 100%;height: 10%;font-size: 2rem;background-color: rgba(0,0,0,0.5);color: white;display: flex;justify-content: center;align-items: center;">Backend Development</div>
-                                <div style="width: 100%;height: 90%; display: flex;justify-content: space-around;align-items: center;flex-wrap: wrap;">
-                                    <div style="width: 100%;height: 20%;display: flex;justify-content: space-around;align-items: center;">
-                                        <div style="width: 16rem;height: 8rem;background-color: white;border-radius: 10px;display: flex;justify-content: center;align-items: center;overflow: hidden;"><img src="./technology logo/django.png" style="max-width: 100%;height: 100%;"></div>
-                                        <div style="width: 12rem;height: 10rem;background-color: white;border-radius: 10px;display: flex;justify-content: center;align-items: center;overflow: hidden;"><img src="./technology logo/nodejs.png" style="max-width: 80%;max-height: 90%;"></div>
-                                        <div style="width: 10rem;height: 10rem;background-color: white;border-radius: 10px;display: flex;justify-content: center;align-items: center;overflow: hidden;"><img src="./technology logo/flask.jpg" style="max-width: 100%;max-height: 90%;"></div>
-                                        </div>
-                                    <div style="width: 100%;height: 20%;display: flex;justify-content: space-around;align-items: center;">
-                                        <div style="width: 15rem;height: 10rem;background-color: white;border-radius: 10px;display: flex;justify-content: center;align-items: center;"><img src="./technology logo/aws-amplify.jpeg" style="max-width: 100%;max-height: 90%;"></div>
+                                    <div class="tech_card" style="background-color: black;">
+                                        <img src="./technology logo/react.png" style="max-width: 100%;max-height: 90%;">
+                                    </div>
+                                    <div class="tech_card">
+                                        <img src="./technology logo/angular.jpg" style="max-width: 100%;max-height: 90%;">
                                     </div>
                                 </div>
                                 
-                                
-                                <!-- <img src="./websites.png" style="max-width: 100%;max-height: 100%;"> -->
                             </div>
-                            <div class="swiper-slide">
-                                <div style="width: 100%;height: 10%;font-size: 2rem;background-color: rgba(0,0,0,0.5);color: white;display: flex;justify-content: center;align-items: center;">Databases</div>
-                                <div style="width: 100%;height: 90%; display: flex;justify-content: space-around;align-items: center;flex-wrap: wrap;">
-                                    <div style="width: 15rem;height: 10rem;background-color: black;border-radius: 10px;display: flex;justify-content: center;align-items: center;">
+                        </div>
+                        <!-- Backend -->
+                        <div class="swiper-slide">
+                            <div class="split_heading" style="color: white;">Backend Development</div>
+                            <div class="split_content">
+                                <div class="tech_card_container">
+                                    <div class="tech_card" style="background-color: #103e2e;padding: 0 10px;">
+                                        <img src="./technology logo/django.png" style="max-width: 100%;max-height: 90%;">
+                                    </div>
+                                    <div class="tech_card" style="padding: 0 10px;border: 1px solid #679e63;">
+                                        <img src="./technology logo/nodejs.png" style="max-width: 100%;max-height: 90%;">
+                                    </div>
+                                    <div class="tech_card">
+                                        <img src="./technology logo/flask.jpg" style="max-width: 100%;max-height: 90%;">
+                                    </div>
+                                    
+                                    <div class="tech_card" style="">
+                                        <img src="./technology logo/aws-amplify.jpeg" style="max-width: 100%;max-height: 90%;">
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!-- Databases -->
+                        <div class="swiper-slide">
+                            <div class="split_heading" style="color: white;">Databases</div>
+                            <div class="split_content">
+                                <div class="tech_card_container">
+                                    
+                                    <div class="tech_card" style="padding: 0 10px;border: 1px solid #00618a;">
                                         <img src="./technology logo/mysql.png" style="max-width: 100%;max-height: 90%;">
                                     </div>
-                                    <div style="width: 10rem;height: 10rem;background-color: white;border-radius: 10px;display: flex;justify-content: center;align-items: center;">
+                                    <div class="tech_card" style="border: 1px solid #71b45d">
                                         <img src="./technology logo/mongoDB.png" style="max-width: 100%;max-height: 90%;">
                                     </div>
-                                    <div style="width: 15rem;height: 10rem;background-color: white;border-radius: 10px;display: flex;justify-content: center;align-items: center;">
+                                    
+                                    <div class="tech_card" style="border: 1px solid #316092;">
                                         <img src="./technology logo/postgersql.png" style="max-width: 100%;max-height: 90%;">
                                     </div>
                                     
                                 </div>
+                                
                             </div>
-                            <div class="swiper-slide">
-                                <div style="width: 100%;height: 10%;font-size: 2rem;background-color: rgba(0,0,0,0.5);color: white;display: flex;justify-content: center;align-items: center;">Cloud Solutions</div>
-                                <div style="width: 100%;height: 90%; display: flex;justify-content: space-around;align-items: center;flex-wrap: wrap;">
-                                    <div style="width: 15rem;height: 10rem;background-color: white;border-radius: 10px;display: flex;justify-content: center;align-items: center;">
-                                        <img src="./technology logo/aws.png" style="max-width: 90%;max-height: 90%;">
+                        </div>
+                        <!-- Cloud Solutions -->
+                        <div class="swiper-slide">
+                            <div class="split_heading" style="color: white;">Cloud Solutions</div>
+                            <div class="split_content">
+                                <div class="tech_card_container">
+                                    
+                                    <div class="tech_card" style="">
+                                        <img src="./technology logo/aws.png" style="max-width: 70%;max-height: 70%;">
                                     </div>
-                                    <div style="width: 15rem;height: 10rem;background-color: white;border-radius: 10px;display: flex;justify-content: center;align-items: center;">
+                                    <div class="tech_card">
                                         <img src="./technology logo/google-cloud.jpg" style="max-width: 100%;max-height: 90%;">
                                     </div>
-                                    <div style="width: 15rem;height: 10rem;background-color: white;border-radius: 10px;display: flex;justify-content: center;align-items: center;">
-                                        <img src="./technology logo/heroku.png" style="max-width: 100%;max-height: 90%;">
-                                    </div>
-                                    <div style="width: 15rem;height: 10rem;background-color: white;border-radius: 10px;display: flex;justify-content: center;align-items: center;">
+                                    
+                                    <div class="tech_card" style="">
                                         <img src="./technology logo/digital ocean.png" style="max-width: 100%;max-height: 90%;">
                                     </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div style="width: 100%;height: 10%;font-size: 2rem;background-color: rgba(0,0,0,0.5);color: white;display: flex;justify-content: center;align-items: center;">Wordpress</div>
-                                <div style="width: 100%;height: 90%; display: flex;justify-content: space-around;align-items: center;flex-wrap: wrap;">
-                                    <div style="width: 15rem;height: 10rem;background-color: white;border-radius: 10px;display: flex;justify-content: center;align-items: center;">
-                                        <img src="./technology logo/wordpress.png" style="max-width: 100%;max-height: 90%;">
-                                    </div>
-                                    <div style="width: 15rem;height: 10rem;background-color: white;border-radius: 10px;display: flex;justify-content: center;align-items: center;overflow: hidden;">
-                                        <img src="./technology logo/elementor.jpg" style="max-width: 100%;height: 100%;">
+                                    <div class="tech_card" style="">
+                                        <img src="./technology logo/heroku.png" style="max-width: 100%;max-height: 80%;">
                                     </div>
                                     
                                 </div>
+                                
                             </div>
-                            
-                            
                         </div>
+                        <!-- WordPress -->
+                        <div class="swiper-slide">
+                            <div class="split_heading" style="color: white;">WordPress</div>
+                            <div class="split_content">
+                                <div class="tech_card_container">
+                                    
+                                    <div class="tech_card" style="border: 1px solid #21759b;">
+                                        <img src="./technology logo/wordpress.png" style="max-width: 90%;max-height: 90%;">
+                                    </div>
+                                    <div class="tech_card">
+                                        <img src="./technology logo/elementor.jpg" style="max-width: 100%;max-height: 100%;">
+                                    </div>
+                                    
+                                    
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        
+                        
                     </div>
-                </div>
-
-                <div style="width: 10vw;height: 100%;display: flex;align-items: center;justify-content: center;padding: 0;">
-                    <div style="margin: 0;transform: rotateZ(90deg);"><div style="display: block;font-size: 5rem;">Technology</div></div>
                 </div>
             </div>
+            <div class="split_right_subject" style="font-size: 4rem;">Technology</div>
+        
+            
         </div>
-    </section>
+    </div>
     
     <!-- Clients -->
-<section>
-    <div style="height: 100vh;overflow-x: hidden;">
-        <div style="height: 20%;width: 100%;background-color: #111;display: flex;justify-content: center;align-items: center;color: white;font-size: xx-large;letter-spacing: 4px;">Our Clients</div>
-        <div style="width: 100%;height: 80%">
-            <div class="swiper-container2">
+    <div class="client_section" style="">
+        <div style="height: 25%;width: 100%;background-color: #111;display: flex;justify-content: center;align-items: center;color: white;font-size: xx-large;letter-spacing: 4px;">Our Clients</div>
+        <div style="width: 100%;height: 75%">
+            <div class="swiper-container_client" style="width: 100%;height: 100%;">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-    
-    
                     <!-- putting Animation -->
-                    <div class="infocardContainer">
-                        <div id="main">
-                          <img src="./Images/cozentus.png" style="max-width: min-content;"></img>
+                    <div class="swiper-slide">
+                        <div class="infocardContainer">
+                            <div id="main">
+                                <img src="./Images/cozentus.png" style="max-width: min-content;"></img>
+                            </div>
+                            <div id="textbois">
+                                <h2>COZENTUS</h2>
+                                <h4><a href="https://cozentus.com/">Visit Official Webpage</a></h4>
+                                <!-- <a href="mailto:limecicila@gmail.com">limecicila@gmail.com</a> -->
+                                <div id="hotlinks">
+                                    <!-- <a href="https://codepen.io/LIMESTA"><img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png" target="_blank"></img>
+                                    </a>
+                                    <a href="https://codepen.io/LIMESTA">
+                                    <img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png" target="_blank"></img>
+                                    </a>
+                                    <a href="https://codepen.io/LIMESTA">
+                                    <img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png" target="_blank"></img> -->
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div id="textbois">
-                          <h2>COZENTUS</h2>
-                          <h4><a href="https://cozentus.com/">Visit Official Webpage</a></h4>
-                          <!-- <a href="mailto:limecicila@gmail.com">limecicila@gmail.com</a> -->
-                          <div id="hotlinks">
-                            <!-- <a href="https://codepen.io/LIMESTA"><img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png" target="_blank"></img>
-                            </a>
-                            <a href="https://codepen.io/LIMESTA">
-                              <img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png" target="_blank"></img>
-                            </a>
-                            <a href="https://codepen.io/LIMESTA">
-                              <img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png" target="_blank"></img> -->
-                            </a>
-                          </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="infocardContainer">
+                            <div id="main">
+                            <img src="./Images/Fiverr.png" style="max-width: min-content;"></img>
+                            </div>
+                            <div id="textbois">
+                            <h2>FIVERR</h2>
+                            <h4><a href="https://www.fiverr.com/">Visit Official Website</a></h4>
+                            <!-- <a href="mailto:limecicila@gmail.com">limecicila@gmail.com</a> -->
+                            <div id="hotlinks">
+                                <!-- <a href="https://codepen.io/LIMESTA"><img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png" target="_blank"></img>
+                                </a>
+                                <a href="https://codepen.io/LIMESTA">
+                                <img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png" target="_blank"></img>
+                                </a>
+                                <a href="https://codepen.io/LIMESTA">
+                                <img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png" target="_blank"></img> -->
+                                </a>
+                            </div>
+                            </div>
                         </div>
-                      </div>
-                    <!-- putting Animation -->    
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="infocardContainer">
-                            <div id="main">
-                              <img src="./Images/Fiverr.png" style="max-width: min-content;"></img>
-                            </div>
-                            <div id="textbois">
-                              <h2>FIVERR</h2>
-                              <h4><a href="https://www.fiverr.com/">Visit Official Website</a></h4>
-                              <!-- <a href="mailto:limecicila@gmail.com">limecicila@gmail.com</a> -->
-                              <div id="hotlinks">
-                                <!-- <a href="https://codepen.io/LIMESTA"><img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png" target="_blank"></img>
-                                </a>
-                                <a href="https://codepen.io/LIMESTA">
-                                  <img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png" target="_blank"></img>
-                                </a>
-                                <a href="https://codepen.io/LIMESTA">
-                                  <img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png" target="_blank"></img> -->
-                                </a>
-                              </div>
-                            </div>
-                          </div>
         
                         <!-- putting Animation -->
                     </div>
                     <div class="swiper-slide">
                         <div class="infocardContainer">
                             <div id="main">
-                              <img src="./Images/cloudpeeps.png" style="max-width: min-content;"></img>
+                            <img src="./Images/cloudpeeps.png" style="max-width: min-content;"></img>
                             </div>
                             <div id="textbois">
-                              <h2>CLOUDPEEPS</h2>
-                              <h4><a href="https://www.cloudpeeps.com/">Visit Official Website</a></h4>
-                              <!-- <a href="mailto:limecicila@gmail.com">limecicila@gmail.com</a> -->
-                              <div id="hotlinks">
+                            <h2>CLOUDPEEPS</h2>
+                            <h4><a href="https://www.cloudpeeps.com/">Visit Official Website</a></h4>
+                            <!-- <a href="mailto:limecicila@gmail.com">limecicila@gmail.com</a> -->
+                            <div id="hotlinks">
                                 <!-- <a href="https://codepen.io/LIMESTA"><img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png" target="_blank"></img>
                                 </a>
                                 <a href="https://codepen.io/LIMESTA">
-                                  <img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png" target="_blank"></img>
+                                <img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png" target="_blank"></img>
                                 </a>
                                 <a href="https://codepen.io/LIMESTA">
-                                  <img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png" target="_blank"></img> -->
+                                <img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png" target="_blank"></img> -->
                                 </a>
-                              </div>
                             </div>
-                          </div>
+                            </div>
+                        </div>
         
                         <!-- putting Animation -->
                     </div>
                     <div class="swiper-slide">
                         <div class="infocardContainer">
                             <div id="main">
-                              <img src="./Images/freelancer-logo-.png" ></img>
+                            <img src="./Images/freelancer-logo-.png" ></img>
                             </div>
                             <div id="textbois">
-                              <h2>FREELANCER</h2>
-                              <h4><a href="https://www.freelancer.com/">Visit Official Website</a></h4>
-                              <!-- <a href="mailto:limecicila@gmail.com">limecicila@gmail.com</a> -->
-                              <div id="hotlinks">
+                            <h2>FREELANCER</h2>
+                            <h4><a href="https://www.freelancer.com/">Visit Official Website</a></h4>
+                            <!-- <a href="mailto:limecicila@gmail.com">limecicila@gmail.com</a> -->
+                            <div id="hotlinks">
                                 <!-- <a href="https://codepen.io/LIMESTA"><img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png" target="_blank"></img>
                                 </a>
                                 <a href="https://codepen.io/LIMESTA">
-                                  <img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png" target="_blank"></img>
+                                <img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png" target="_blank"></img>
                                 </a>
                                 <a href="https://codepen.io/LIMESTA">
-                                  <img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png" target="_blank"></img> -->
+                                <img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png" target="_blank"></img> -->
                                 </a>
-                              </div>
                             </div>
-                          </div>
+                            </div>
+                        </div>
         
                         <!-- putting Animation -->
                     </div>
                     <div class="swiper-slide">
                         <div class="infocardContainer">
                             <div id="main">
-                              <img src="./Images/flexjobs.png" ></img>
+                            <img src="./Images/flexjobs.png" ></img>
                             </div>
                             <div id="textbois">
-                              <h2>FLEXJOBS</h2>
-                              <h4><a href="https://www.flexjobs.com/">Visit Official Website</a></h4>
-                              <!-- <a href="mailto:limecicila@gmail.com">limecicila@gmail.com</a> -->
-                              <div id="hotlinks">
+                            <h2>FLEXJOBS</h2>
+                            <h4><a href="https://www.flexjobs.com/">Visit Official Website</a></h4>
+                            <!-- <a href="mailto:limecicila@gmail.com">limecicila@gmail.com</a> -->
+                            <div id="hotlinks">
                                 <!-- <a href="https://codepen.io/LIMESTA"><img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png" target="_blank"></img>
                                 </a>
                                 <a href="https://codepen.io/LIMESTA">
-                                  <img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png" target="_blank"></img>
+                                <img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png" target="_blank"></img>
                                 </a>
                                 <a href="https://codepen.io/LIMESTA">
-                                  <img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png" target="_blank"></img> -->
+                                <img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png" target="_blank"></img> -->
                                 </a>
-                              </div>
                             </div>
-                          </div>
+                            </div>
+                        </div>
         
                         <!-- putting Animation -->
                     </div>
                     <div class="swiper-slide">
                         <div class="infocardContainer">
                             <div id="main">
-                              <img src="./Images/" ></img>
+                            <img src="./Images/" ></img>
                             </div>
                             <div id="textbois">
-                              <h2></h2>
-                              <h4><a href="https://www.peopleperhour.com/">Visit Official Website</a></h4>
-                              <!-- <a href="mailto:limecicila@gmail.com">limecicila@gmail.com</a> -->
-                              <div id="hotlinks">
+                            <h2></h2>
+                            <h4><a href="https://www.peopleperhour.com/">Visit Official Website</a></h4>
+                            <!-- <a href="mailto:limecicila@gmail.com">limecicila@gmail.com</a> -->
+                            <div id="hotlinks">
                                 <!-- <a href="https://codepen.io/LIMESTA"><img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png" target="_blank"></img>
                                 </a>
                                 <a href="https://codepen.io/LIMESTA">
-                                  <img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png" target="_blank"></img>
+                                <img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png" target="_blank"></img>
                                 </a>
                                 <a href="https://codepen.io/LIMESTA">
-                                  <img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png" target="_blank"></img> -->
+                                <img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png" target="_blank"></img> -->
                                 </a>
-                              </div>
                             </div>
-                          </div>
+                            </div>
+                        </div>
         
                         <!-- putting Animation -->
                     </div>
+    
+                    
+                    
                 </div>
             </div>
         </div>
         
     </div>
-</section>
 
 
 
-<!-- contact us -->
-    <!-- <section> -->
-        <div style="width: 100%;height: 100vh;background-color: #111;" >
-            <div style="width: 100%;height: 20%;color: white;text-align: center;display: flex;flex-direction: column;justify-content: center;align-items: center;color: #3e3;">
-                <div style="font-size: xx-large;line-height: 5rem;">CONTACT US</div>
-                <div style="letter-spacing: 3px;color: white;">We are waiting to hear from you soon .......</div>
-                
-    
-            </div>
+    <!-- contact us -->
+    <div style="width: 100%;height: 100vh;background-color: #111;" >
+        <div style="width: 100%;height: 20%;color: white;text-align: center;display: flex;flex-direction: column;justify-content: center;align-items: center;color: #3e3;">
+            <div style="font-size: xx-large;line-height: 5rem;">CONTACT US</div>
+            <div style="letter-spacing: 3px;color: white;">We are waiting to hear from you soon .......</div>
             
-            <div style="width: 100%;height: 80%;display: flex;justify-content: space-around;align-items: center;">
-                <!-- <div style="height: 100%;width: 60%;border: 1px solid red;display: flex;justify-content: center;align-items: center;background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url(./Images/contact-bg.jpg) no-repeat;background-size: cover ;">
-                    <div style="width: 75%;height: 90%;border-radius: 15px;background: rgba(0,0,0,0.4);">
-                        <form class="form" style="display: flex;flex-direction: column;justify-content: start;align-items: flex-start;padding: 5vh 5vw;color: white;">
-                            <h2>Hi ,</h2>
-                            <div>
-                                <label style="font-size: large;display: block;">I am</label>
-                                <span><input class="frm-ip" style="width: 30vw;height: 5vh;background-color: transparent;border: none;border-bottom: 1px solid aqua;" type="email" placeholder="Type your email here ..." required ></span>
-                            </div>
-                            <label style="font-size: large;display: block;letter-spacing: 2px;font-family: 'Poppins', sans-serif;">I want to have a conversation regarding my Project.</label>
-                            <textarea class="frm-ip" type="text" style="width: 30vw;height: 20vh;background-color: transparent;border: none;border-bottom: 1px solid aqua;" placeholder="Any personalizes message .....                      Eg.  I want to Blogging Website with Wordpress for 100$ "></textarea>
-                        </form>
-                        <div style="width: 100%;display: flex;justify-content: center;">
-                            <div style="background: linear-gradient(150deg, #39ef74, #4600f1 100%);border-radius: 50px;color: white;display: flex;justify-content: center;align-items: center;font-size: large;letter-spacing: 5px;padding: 20px 50px;cursor: pointer;">SEND</div>
-                        </div>
-                    </div>
-                </div> -->
-                <div style="height: 100%;width: 50%;display: flex;justify-content: center;align-items: flex-start;">
-                    <div class="contact_container">
-                        <div class="front side">
-                            <div class="contact_content cmp" style="display: flex;align-items:center;height: 100%;width: 100%;justify-content: center   ;">
-                                <div style="font-size: 5rem;color: #3e3">code2transform</div>
-                                <!-- <p>I am a graphic designer and art director. I am as well specialised in front end web design, user experience and creating identities. Throughout my career, I have worked with companies of all shapes and sizes that enriched my experience
-                                </p> -->
-                            </div>
-                        </div>
-                        <div class="back side">
-                            <div class="contact_content">
-                                <h1>Contact Me</h1>
-                                <form>
-                                    <label>Your Name :</label>
-                                    <input type="text" placeholder="Omar Khattab">
-                                    <label>Your E-mail :</label>
-                                    <input type="text" placeholder="Example@mail.com">
-                                    <label>Your message :</label>
-                                    <textarea placeholder="The Subject"></textarea>
-                                    <input type="submit" value="Done">
-                                </form>
-                            </div>
-                        </div>
-                    
-                    </div>
-                </div>
-                
-                <!-- <a target="_blank" href="http://codepen.io/Moslim/" class="white-mode">OTHER PENS</a> -->
-                <div style="height: 100%;width: 50%;background: linear-gradient(#111,#111);display: flex;justify-content: center;align-items: center;">
-                    <img src="./isometric/Social_media_adv_SVG.svg" style="max-width: 100%;max-height: 90%;">
-                </div>
-                
-            </div>
+
         </div>
-        <!-- </section> -->
         
-    
-        <!-- <div style="height: 100vh;">Hello</div> -->
-    
-        <!-- Footer Starts-->
-    
-        <section>
-            <div class="footer">
-    
+        <div class="split_contact">
+            <!-- <div style="height: 100%;width: 60%;border: 1px solid red;display: flex;justify-content: center;align-items: center;background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url(./Images/contact-bg.jpg) no-repeat;background-size: cover ;">
+                <div style="width: 75%;height: 90%;border-radius: 15px;background: rgba(0,0,0,0.4);">
+                    <form class="form" style="display: flex;flex-direction: column;justify-content: start;align-items: flex-start;padding: 5vh 5vw;color: white;">
+                        <h2>Hi ,</h2>
+                        <div>
+                            <label style="font-size: large;display: block;">I am</label>
+                            <span><input class="frm-ip" style="width: 30vw;height: 5vh;background-color: transparent;border: none;border-bottom: 1px solid aqua;" type="email" placeholder="Type your email here ..." required ></span>
+                        </div>
+                        <label style="font-size: large;display: block;letter-spacing: 2px;font-family: 'Poppins', sans-serif;">I want to have a conversation regarding my Project.</label>
+                        <textarea class="frm-ip" type="text" style="width: 30vw;height: 20vh;background-color: transparent;border: none;border-bottom: 1px solid aqua;" placeholder="Any personalizes message .....                      Eg.  I want to Blogging Website with Wordpress for 100$ "></textarea>
+                    </form>
+                    <div style="width: 100%;display: flex;justify-content: center;">
+                        <div style="background: linear-gradient(150deg, #39ef74, #4600f1 100%);border-radius: 50px;color: white;display: flex;justify-content: center;align-items: center;font-size: large;letter-spacing: 5px;padding: 20px 50px;cursor: pointer;">SEND</div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="contact_card_container">
+                <div class="contact_card">
+                    <div class="front side">
+                        <div class="contact_content cmp" style="display: flex;align-items:center;height: 100%;width: 100%;justify-content: center   ;">
+                            <div style="color: #3e3">code2transform</div>
+                            <!-- <p>I am a graphic designer and art director. I am as well specialised in front end web design, user experience and creating identities. Throughout my career, I have worked with companies of all shapes and sizes that enriched my experience
+                            </p> -->
+                        </div>
+                    </div>
+                    <div class="back side">
+                        <div class="contact_content">
+                            <h1>Contact Me</h1>
+                            <form>
+                                <label>Your Name :</label>
+                                <input type="text" placeholder="Omar Khattab">
+                                <label>Your E-mail :</label>
+                                <input type="text" placeholder="Example@mail.com">
+                                <label>Your message :</label>
+                                <textarea placeholder="The Subject"></textarea>
+                                <input type="submit" value="Done">
+                            </form>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
             
-                <div class="row" style="display: flex;justify-content: center;align-items: center;">
-                    <div class="column" style="height: 100%;width: 25%;display: flex;flex-direction: column;justify-content: center;align-items: center;margin-top: 3rem;" >
-                        <h2 style="display: flex;justify-content: center;align-items: flex-end;height: 25%;text-align: center;font-size: xx-large;">code2transform</h2>
-                        <div style="display: flex;justify-content:stretch;align-items: flex-start;width: 65%;height: 75%;margin-top: -5vh;">
-                            <a href="#" class="fa fa-facebook fa-lg" style="display: flex;justify-content: center;align-items: center;"></a>
+            <!-- <a target="_blank" href="http://codepen.io/Moslim/" class="white-mode">OTHER PENS</a> -->
+            <div class="contact_svg_container">
+                <img src="./isometric/Social_media_adv_SVG.svg">
+            </div>
+            
+        </div>
+    </div>
+    
+
+    
+
+    <!-- Footer Starts-->
+
+    <div style="display: flex;flex-direction: column;">
+        <div class="footer">
+            <div class="row">
+                <div class="cmp_info">
+                    <div class="footer_cmp_name">
+                        code2transform
+                    </div>
+                    <div class="footer_social_links">
+                        
+                        <div>
+                            <div class="footer_social_icon">
+                                <img src="./Social Icons/linkedin.svg">
+                            </div>
+                            <div class="footer_social_info">
+                                code2transform.web
+                            </div>
+                        </div>
+                        <div>
+                            <div class="footer_social_icon">
+                                <img src="./Social Icons/facebook.svg">
+                            </div>
+                            <div class="footer_social_info">
+                                code2transform.web
+                            </div>
+                        </div>
+                        <div>
+                            <div class="footer_social_icon">
+                                <img src="./Social Icons/gmail.svg">
+                            </div>
+                            <div class="footer_social_info">
+                                code2transform.web@gmail.com
+                            </div>
+                        </div>
+                        <div>
+                            <div class="footer_social_icon">
+                                <img src="./Social Icons/instagram.svg">
+                            </div>
+                            <div class="footer_social_info">
+                                code2transform.web
+                            </div>
+                        </div>
+                        <div>
+                            <div class="footer_social_icon">
+                                <img src="./Social Icons/customer-service.svg">
+                            </div>
+                            <div class="footer_social_info">
+                                +91 8917350242
+                            </div>
+                        </div>
+                        
+                        <!-- <div class="footer_social_icons"> -->
+                            <!-- <a href="#" class="fa fa-facebook fa-lg" style="display: flex;justify-content: center;align-items: center;"></a>
                             <a href="#" class="fa fa-twitter fa-lg" style="display: flex;justify-content: center;align-items: center;"></a>
                             <a href="#" class="fa fa-linkedin fa-lg" style="display: flex;justify-content: center;align-items: center;"></a>
-                            <a href="#" class="fa fa-instagram fa-lg" style="display: flex;justify-content: center;align-items: center;"></a>
-                        </div>
+                            <a href="#" class="fa fa-instagram fa-lg" style="display: flex;justify-content: center;align-items: center;"></a> -->
+                            
+                            <!-- <img src="./Social Icons/linkedin.svg">
+                            <img src="./Social Icons/facebook.svg">
+                            <img src="./Social Icons/instagram.svg">
+                            <img src="./Social Icons/customer-service.svg"> -->
+                            
+                        <!-- </div> -->
                         
-                    </div>
-                    <div style="width: 50%;height: 100%;display: flex;justify-content: space-around;align-items: flex-start;">
-                        <div class="column" style=""  >
-                            <p style="color: gray;font-size: 15px;margin-top: 75px;">Support</p>
-                            <div class="supp_f">
-                                <a  href="">Contact Us</a>
-                                <a  href="">FAQ</a>
-                                <a  href="">Downloads</a>
-                                <a  href="">Locate A Dealer</a>
-                                <!-- <a  href="">Training</a>
-                                <a  href="">Employees</a> -->
-                            </div>
-                        </div>
                         
-                        <div class="column" style="">
-                            <p style="color: gray;font-size: 15px;margin-top: 75px;">code2transform</p>
-                            <div class="supp_f">
-                            <a href="" >About c2t</a>
-                            <a href="" >c2t Team</a>
-                            <a href="" >Carrers</a>
-                            <a href="" >Our Works</a>
-                            <!-- <a href="" >Achievements</a> -->
-                            </div>
-                        </div>
-                        <div class="column" style="">
-                            <p style="color: gray;font-size: 15px;margin-top: 75px;">code2transform</p>
-                            <div class="supp_f">
-                            <a href="" >About c2t</a>
-                            <a href="" >c2t Team</a>
-                            <a href="" >Carrers</a>
-                            <a href="" >Our Works</a>
-                            <!-- <a href="" >Achievements</a> -->
-                            </div>
-                        </div>
+                        
+                        
                     </div>
                     
-                    <div class="column" style="width: 25%;height: 100%;">
+                        
+                    
+                </div>
+                <div class="links_conntainer">
+                        <div class="links_column"  >
+                            <p style="color: gray;font-size: 15px;">Support</p>
+                            <a  href="">Contact Us</a>
+                            <a  href="">FAQ</a>
+                            <a  href="">Downloads</a>
+                            <a  href="">Locate A Dealer</a>
+                        </div>
+                        
+                        <div class="links_column" >
+                            <p style="color: gray;font-size: 15px;">About</p>
+                            <a href="" >About c2t</a>
+                            <a href="" >c2t Team</a>
+                            <a href="" >Carrers</a>
+                            <a href="" >Our Works</a>
+                            
+                        </div>
+                        <div class="links_column" >
+                            <p style="color: gray;font-size: 15px;">code2transform</p>
+                            <a href="" >About c2t</a>
+                            <a href="" >c2t Team</a>
+                            <a href="" >Carrers</a>
+                            <a href="" >Our Works</a>
+                        </div>
+                    
+                </div>
+                <div class="additional_info">
+                    <div style="width: 100%;display: flex;justify-content: space-around;">
+                        <div style="width:10%;display: flex;justify-content: left;align-items: center;">
+                            <img src="./Social Icons/envelope_white.svg" style="max-width: 50%;">
+                        </div>
+                        <p style="width: 90%;">Stay up to date with code2transform</p>
+                    </div>
+                    
+                    <input  type="email" name="" id="" placeholder="Enter your Email-id here" style="
+                    "></input>
+                    <button  class="sign_up"href="" >Sign Up
+                    </button>
+                    <!-- <div class="column" style="width: 25%;height: 100%;">
                         <i class="fa fa-envelope-square fa-lg" style="margin-top: 75px;"></i>
                         <p style="display: inline-block;">Stay up to date with code2transform</p>
                         <input  type="email" name="" id="" placeholder="Enter your Email-id here" style="margin-left: 26px;box-sizing: ;
@@ -1118,22 +867,34 @@
                             display: inline-block;
                             font-size: 16px;">Sign Up</a>
         
-                    </div>
-                    
-                  </div>
-                  <hr>
-                <a href="" style="text-decoration: none;
-                color: gray;
-                margin-left: 32em;">Copyright</a>
-                <i  class="fa fa-copyright" style=" display: inline-block;
-                padding-left: 0px;
-                padding-right: 0px;" aria-hidden="true"></i>
-                <p style="display: inline-block;color: gray;">2021-Present <strong style="font-size: 20px;">code2transform</strong> All rights reserved</p>
-                  
+                    </div> -->
+                </div>
+                
             </div>
-        </section>
+            
+                
+        </div>
+        <!-- <hr> -->
+        <div class="footer_copyright">
+            <div>
+                <div style="display: flex;justify-content:center;align-items: center;">
+                    <img src="./Social Icons/copyright-symbol.svg" style="width: 2vh;fill: gray;">
+                </div>
+                <div>Copyright 2021-Present code2transform All rights reserved</div>
+                
+            </div>
+            <!-- <a href="" style="text-decoration: none;
+            color: gray;
+            margin-left: 32em;">Copyright</a>
+            <i  class="fa fa-copyright" style=" display: inline-block;
+            padding-left: 0px;
+            padding-right: 0px;" aria-hidden="true"></i>
+            <p style="display: inline-block;color: gray;">2021-Present <strong style="font-size: 20px;">code2transform</strong> All rights reserved</p> -->
+        </div>
         
-        <!-- Footer Ends -->
+    </div>
+    
+    <!-- Footer Ends -->
     
     
 
@@ -1142,7 +903,6 @@
 
     <script type="text/javascript">
         
-      
     </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
@@ -1150,9 +910,11 @@
     crossorigin="anonymous">
     </script>
     <script src="JS/snap-scroll.min.js"></script>
+    
 
 
-
+    
+    <script src="./JS/swipe.js"></script>
     <script src="JS\main.js"></script>
 </body>
 </html>
