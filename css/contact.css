@@ -1,0 +1,291 @@
+.split_contact{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact_card {
+    margin: auto;
+    width: 90%;
+    height: 70%;
+    border-radius: 20px;
+    position: relative;
+    -webkit-transition: 1.5s ease-in-out;
+    transition: 1.5s ease-in-out;
+    transform-style: preserve-3d;
+    border: 1px solid green;
+}
+  .contact_card_container{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .contact_svg_container{
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(#111,#111);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact_svg_container img{
+    max-width: 100%;
+    max-height: 90%;
+  }
+
+  /* Card */
+  .side {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        /* padding: 20px 50px; */
+        color: #fff;
+        transform-style: preserve-3d;
+        backface-visibility: hidden;
+        border-radius: 20px;
+        border: 1px solid green;
+  }
+  .contact_content {
+      transform: translatez(70px) scale(0.8);
+      line-height: 1.5em;
+  }
+  .contact_content h1 {
+      position: relative;
+  }
+  .contact_content p {
+      margin-top: 50px;
+      line-height: 2em;
+  }
+  .contact_content h1:before {
+      content: "";
+      position: absolute;
+      bottom: -2vh;
+      height: 3px;
+      background-color: #3e3;
+      width: 70px;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+  .cmp{
+    transform: translatez(100px) scale(0.8);
+  }
+  .cmp div{
+    font-size: 10vh;
+  }
+  .cmp div:before{
+    content: "";
+      position: absolute;
+      bottom: 40%;
+      height: 0.3rem;
+      background-color: white;
+      width: 10rem;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 20px;
+  }
+  @media (max-width: 1100px){
+    .cmp div:before{
+        bottom: 35%;
+    }
+  }
+
+  
+  .front {
+      z-index: 2;
+      /* background-size: 100% 100%; */
+      background-size: cover;
+      /* background-image: url(../Images/contact-bg.jpg); */
+    /* background-color: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)); */
+    /* background-color: rgba(0,0,0,0.7); */
+    /* background-image: url(https://userscontent2.emaze.com/images/f9538183-0ff9-478f-b964-c8ab90421e3b/3d28e192fda5c17250f96a2779c84475.jpg); */
+  
+  }
+  .back {
+    /* max-width: 40vw;
+    max-height: 50vh; */
+      width: 100%;
+      height: 100%;
+      background-color: #333;
+      transform: rotateY(180deg);
+      z-index: 0;
+      padding-top: 10px;
+      background-color: rgba(0,0,0,0.7);
+      background: url(https://userscontent2.emaze.com/images/f9538183-0ff9-478f-b964-c8ab90421e3b/3d28e192fda5c17250f96a2779c84475.jpg);
+      background-size: cover;
+    /* overflow: hidden; */
+  }
+  .contact_card:hover {
+      -webkit-transform: rotateY(180deg);
+      transform: rotateY(180deg);
+  }
+  form {
+      text-align: left;
+  }
+  .back h1 {
+      margin: 0;
+  }
+  form label,
+  form input {
+      display: block;
+  }
+  form input,
+  form textarea {
+      background: transparent;
+      border: 0;
+      border-bottom: 2px solid #444;
+      padding: 5px;
+      width: 100%;
+      color: #fff;
+  }
+  form label {
+      margin: 15px 0;
+  }
+  form input[type="submit"] {
+      display: block;
+      width: auto;
+      margin: 10px auto;
+      padding: 5px 10px;
+      border: 3px solid #555;
+      border-radius: 4px;
+      color: #fff;
+      cursor: pointer;
+  }
+  /* my button style  */
+  .white-mode {
+      text-decoration: none;
+      padding: 7px 10px;
+      background-color: #122;
+      border-radius: 3px;
+      color: #fff;
+      transition: 0.35s ease-in-out;
+      position: fixed;
+      left: 15px;
+      bottom: 15px;
+      font-family: "Montserrat";
+  }
+  
+  .white-mode:hover {
+      background-color: #fff;
+      color: #122;
+  }
+  
+  
+  
+  .hr_scroll{
+      /* transform: rotateZ(-90deg) ; */
+      overflow-y:auto;
+      overflow-x:hidden;
+      width: 90vh;
+      min-height: 70vw;
+      display: flex;
+      justify-content: center;
+      align-items:center; 
+      /* transform-origin:right top; */
+      
+  }
+  /* .hr_scroll > div{
+      transform: translateY(2000px); */
+      /* height: 700vw;   */
+      /* width: 90vh;
+      background-color: gray;
+      border: 10px solid black;
+  } */
+  .hr_scroll > div {
+      /* transform:  rotateZ(90deg); */
+      width: 500px;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* transform-origin: right top; */
+  
+  }
+  
+  .form > *{
+      margin: 5px 0;;
+      /* border: 1px solid red; */
+  }
+  .frm-ip :focus{
+      outline: none;
+  }
+  
+  ::placeholder{
+      color: rgb(97, 74, 74);
+      letter-spacing: 2PX;
+  }
+  
+  
+  
+  .no_scroll_bar::-webkit-scrollbar {
+      display: none;
+  }
+  .no_scroll_bar {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+  }
+
+
+
+
+@media (max-width: 1100px){
+    .split_contact{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .contact_card_container{
+        height: 60%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        
+    }
+    .contact_card {
+        margin: auto;
+        width: 90%;
+        height: 90%;
+        border-radius: 20px;
+        position: relative;
+        -webkit-transition: 1.5s ease-in-out;
+        transition: 1.5s ease-in-out;
+        transform-style: preserve-3d;
+        border: 1px solid green;
+    }
+    .contact_svg_container{
+        height: 40%;
+        width: 100%;
+        background: linear-gradient(#111,#111);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .contact_svg_container img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .cmp div{
+        font-size: 15vw;
+    }
+    .cmp div:before{
+        content: "";
+        position: absolute;
+        bottom: 38%;
+        height: 0.3rem;
+        background-color: white;
+        width: 10rem;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 20px;
+    }
+}
