@@ -68,6 +68,10 @@ body{
 .split .split_body .split_content_isometric{
     width: 40%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 .split .split_body .split_content_isometric img{
     width: 100%;
@@ -78,6 +82,7 @@ body{
     height: 100%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -142,6 +147,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px 10px;
 }
 .custom_card:hover .face_up{
     transform: translateY(0);
@@ -200,7 +206,7 @@ body{
     }
     .split .split_body .split_heading{
         width: 100%;
-        height: 5vh;
+        height: 5%;
         background-color: #333;
         display: flex;
         justify-content: center;
@@ -211,6 +217,7 @@ body{
 
     .split .split_body .split_content{
         width: 100%;
+        height: 95%;
         align-items: center; 
         /* background-color: #111111; */
         display: block;
@@ -219,6 +226,7 @@ body{
         height: 35%;
         width: 100%;
         display: block;
+        border: none;
         /* border: 1px solid red; */
     }
     .split .split_body .split_content_isometric img{
@@ -227,30 +235,31 @@ body{
     }
     .split .split_body .split_content_card_container{
         width: 100%;
-        height: 75%;
+        height: 65%;
         /* height: 500vh; */
         display: flex;
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
         overflow: auto;
+        border: none;
     }
     
 
     .custom_card{
         width: 45vw;
-        height: 15vh;
+        height: 20vh;
         position: relative;
         border-radius: 10px;
         overflow: hidden;
     }
     .custom_card:nth-child(n+3){
-        margin-bottom: 15vh;
+        margin-bottom: 10vh;
     }
     .face_up{
         position: relative;
         width: 100%;
-        height: 70%;
+        height: 60%;
         background-color: aqua;
         transform: translateY(30%);
         z-index: 3;
@@ -274,13 +283,14 @@ body{
     .face_down{
         /* position: relative; */
         width: 100%;
-        height: 30%;
+        height: 40%;
         transform: translateY(-50%);
         z-index: 1;
         transition: 0.5s;
         display: flex;
         justify-content: center;
         align-items: center;
+        color: white;
     }
     .custom_card:hover .face_up{
         transform: translateY(0);
@@ -290,6 +300,29 @@ body{
     .custom_card:hover .face_down{
         transform: translateY(0);
         background-color: #ff0057;
+        /* background-color:#333 */
         
     }
+
+
+
+    .db .split_content .split_content_card_container{
+        background: linear-gradient(to bottom,#010D5F,#042C8E);
+    }
+    
+    .api .split_content .split_content_card_container{
+        background: linear-gradient(to bottom,#0F054C,#042C8E);
+    }
+
+    .cloud .split_content .split_content_card_container{
+        background: linear-gradient(to right,#021267,#020959);
+    }
+    .fsd .split_content .split_content_card_container{
+        background: linear-gradient(to right,#021267,#000655);
+    }
+
+    
 }
+/* .db .split_content .split_content_card_container{
+    background: linear-gradient(to right,#010C5C,#042C8E);
+} */

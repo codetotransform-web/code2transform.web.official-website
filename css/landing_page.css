@@ -78,13 +78,15 @@
     /* margin-bottom: 0; */
     padding: 0;
 }
+
 @media (max-width: 1100px){
     .landing_page{
         min-height: 100vh;
         padding: 0;
-        background: url('../landing_page_bg_mobile.jpg') no-repeat;
+        background: url('../landing_page_bg.jpg') no-repeat;
         background-repeat: no-repeat;
         background-attachment: fixed;
+        background-size: 100% 100%;
         /* margin-bottom: 10vh; */
     }
     .landing_page .cmp_branding{
@@ -141,6 +143,16 @@
         display: flex;
         justify-content: center;
         align-items: flex-start;
-        margin-bottom: 10vh;
+        /* margin-bottom: 10vh; */
+    }
+}
+@media (max-width: 400px){
+    .landing_page{
+        min-height: 100vh;
+        padding: 0;
+        background: url('../landing_page_bg_mobile.jpg') no-repeat;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        /* margin-bottom: 10vh; */
     }
 }

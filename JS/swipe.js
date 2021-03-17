@@ -10,7 +10,7 @@ swiper.params.mousewheel.releaseOnEdges = true;
 
 
 
-var swiper = new Swiper('.swiper-container_services', {
+var swiper_services = new Swiper('.swiper-container_services', {
   direction: 'vertical',
   mousewheel: true,
   pagination: {
@@ -18,12 +18,14 @@ var swiper = new Swiper('.swiper-container_services', {
     clickable: true,
   },
 });
-swiper.params.mousewheel.releaseOnEdges = true;
+swiper_services.params.mousewheel.releaseOnEdges = true;
+swiper_services.params.touchReleaseOnEdges= true;
 
 
 
-var swiper = new Swiper('.swiper-container_tech', {
+var swiper_tech = new Swiper('.swiper-container_tech', {
   effect: 'cube',
+  direction: 'vertical',
   // grabCursor: true,
   mousewheel: true,
   // loop: true,
@@ -37,7 +39,8 @@ var swiper = new Swiper('.swiper-container_tech', {
   //   el: '.swiper-pagination',
   // },
 });
-swiper.params.mousewheel.releaseOnEdges = true;
+swiper_tech.params.mousewheel.releaseOnEdges = true;
+swiper_tech.params.touchReleaseOnEdges= true;
 
 
 

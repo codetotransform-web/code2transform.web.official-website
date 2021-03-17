@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>code2transform</title>
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/landing_page.css">
     <link rel="stylesheet" href="./css/services.css">
     <link rel="stylesheet" href="./css/technology.css">
@@ -14,9 +14,16 @@
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/footer.css">
     <!-- <link rel="stylesheet" href="./css/media.css"> -->
+
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Psoppins%26display=swap" rel="stylesheet"> -->
     <style>
+        html{
+            scroll-behavior: smooth;
+        }
         body{
             width: 100vw;
+            position: relative;
             /* overflow: hidden; */
         }
         h1,p{
@@ -25,16 +32,34 @@
         }
         
     </style>
+
+
+<!-- Bootstrap -->
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" 
+    integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" 
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script> -->
+
+
+
+
 <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet"> -->
 
 <!-- fonts -->
     
     <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
     <script src="./swiper/swiper-bundle.min.js"></script>
 
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+
+
+
+    <!-- Email -->
+    <script src= "https://smtpjs.com/v3/smtp.js"> </script> 
 
     
     
@@ -42,9 +67,9 @@
 <body>
     
     <!-- Landing page -->
-    <div class="landing_page" id="landing_page" style="">
+    <div class="landing_page" id="home" >
         <!-- top menu -->
-        <nav>
+        <!-- <nav>
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
               <i class="fas fa-bars"></i>
@@ -57,7 +82,25 @@
               <li><a href="#">Contact</a></li>
               <li><a href="#">Feedback</a></li>
             </ul>
+        </nav> -->
+        <!--Navbar -->
+        <nav>
+            <div class="logo">
+                <h4>code2transform</h4>
+            </div>
+            <ul id="nav-links" class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#technology">Technology</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </nav>
+  <!--/.Navbar -->
         <!-- Landing page content -->
 
         <!-- Company Branding -->
@@ -88,7 +131,7 @@
     </div>
 
     <!-- Services -->
-    <div style="width: 100vw;">
+    <div id="services" style="width: 100vw;">
         <div class="split">
             <div class="split_subject" style="">Services</div>
         
@@ -100,7 +143,7 @@
                             <div class="split_heading" style="color: white;">Web Designing</div>
                             <div class="split_content">
                                 <div class="split_content_isometric">
-                                    <img src="./isometric/webdesign.svg">
+                                    <img src="./isometric/webdesign.svg" style="">
                                 </div>
                                 <div class="split_content_card_container">
                                     <div class="custom_card" style="">
@@ -108,53 +151,53 @@
                                             <div class="card_heading">Landing Page</div>
                                             <img src="./svg/frontend/landing_page.svg" style="max-width: 100%;max-height: 100%;">
                                         </div>
-                                        <div class="face_down">Landing page is a standalone web page, created specifically for a marketing or advertising campaign.</div>
+                                        <div class="face_down">Awesome looking creative landing page with animation .</div>
                                     </div>
                                     <div class="custom_card" style="">
                                         <div class="face_up">
                                             <div class="card_heading">PSD to Webpage</div>
                                             <img src="./svg/frontend/psd_webpage.svg" style="max-width: 100%;max-height: 100%;">
                                         </div>
-                                        <div class="face_down">Conversion of photoshop® .psd files to html.</div>
+                                        <div class="face_down">Conversion of photoshop® .psd files to Webpage.</div>
                                     </div>
                                     <div class="custom_card" style="">
                                         <div class="face_up">
                                             <div class="card_heading">Frontend Design</div>
                                             <img src="./svg/frontend/Frontend_UI-UX.svg" style="max-width: 100%;max-height: 100%;">
                                         </div>
-                                        <div class="face_down">Involves creating the HTML,CSS,and presentational JavaScript code that makes up a user interface.</div>
+                                        <div class="face_down">Web Designinig using HTML,CSS,JS or WordPress.</div>
                                     </div>
                                     <div class="custom_card" style="">
                                         <div class="face_up">
                                             <div class="card_heading">Animated Design</div>
                                             <img src="./svg/frontend/animated_webpage.svg" style="max-width: 100%;max-height: 100%;">
                                         </div>
-                                        <div class="face_down">Create images and effects for movies, television, websites and video games.</div>
+                                        <div class="face_down">Make your websites interactive with animation.</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!-- Database Designing -->
-                        <div class="swiper-slide">
+                        <div class="swiper-slide db">
                             <div class="split_heading" style="color: white;">Database Designing</div>
                             <div class="split_content">
                                 <div class="split_content_isometric">
                                     <img src="./isometric/database.jpg">
                                 </div>
-                                <div class="split_content_card_container">
+                                <div class="split_content_card_container" style="">
                                     <div class="custom_card" style="">
                                         <div class="face_up">
                                             <div class="card_heading">MySQL/MongoDB</div>
-                                            <img src="./svg/frontend/landing_page.svg" style="max-width: 100%;max-height: 100%;">
+                                            <img src="./svg//Database/Database_design.svg" style="max-width: 100%;max-height: 100%;">
                                         </div>
-                                        <div class="face_down">Design your database using latest technology like MySQL/MongoDB.</div>
+                                        <div class="face_down">Design your databases SQL and NoSQL Databases.</div>
                                     </div>
                                     <div class="custom_card" style="">
                                         <div class="face_up">
-                                            <div class="card_heading">Database Schema Design</div>
-                                            <img src="./svg/frontend/psd_webpage.svg" style="max-width: 100%;max-height: 100%;">
+                                            <div class="card_heading">DB Schema Design</div>
+                                            <img src="./svg/Database/database_schema.svg" style="max-width: 100%;max-height: 100%;">
                                         </div>
-                                        <div class="face_down">We will construct a better frame work for data management.</div>
+                                        <div class="face_down">We will construct a better frame-work for data management.</div>
                                     </div>
                                     <!-- <div class="custom_card" style="">
                                         <div class="face_up">
@@ -177,23 +220,23 @@
                         <div class="swiper-slide">
                             <div class="split_heading" style="color: white;">Backend Development</div>
                             <div class="split_content">
-                                <div class="split_content_isometric">
-                                    <img src="./isometric/Backend.jpg">
+                                <div class="split_content_isometric" >
+                                    <img src="./isometric/Backend.jpg" style="max-height: 80%;"> 
                                 </div>
                                 <div class="split_content_card_container">
                                     <div class="custom_card" style="">
                                         <div class="face_up">
-                                            <div class="card_heading">LogIn/SignUp(Authentication)</div>
+                                            <div class="card_heading">Login/SignUp</div>
                                             <img src="./svg/Backend/authentication.svg" style="max-width: 100%;max-height: 100%;">
                                         </div>
-                                        <div class="face_down">A quick login/signup page will give personalised touch to your website.</div>
+                                        <div class="face_down">Authentication page will give personalised touch to your website.</div>
                                     </div>
                                     <div class="custom_card" style="">
                                         <div class="face_up">
-                                            <div class="card_heading">Backend Database Design</div>
+                                            <div class="card_heading">Backend Services</div>
                                             <img src="./svg/Backend/database.svg" style="max-width: 100%;max-height: 100%;">
                                         </div>
-                                        <div class="face_down">Design different database according to client's requirements.</div>
+                                        <div class="face_down">Develope Backend according to client's requirements.</div>
                                     </div>
                                     <div class="custom_card" style="">
                                         <div class="face_up">
@@ -213,7 +256,7 @@
                             </div>
                         </div>
                         <!-- API Integration -->
-                        <div class="swiper-slide">
+                        <div class="swiper-slide api">
                             <div class="split_heading" style="color: white;">API Integration</div>
                             <div class="split_content">
                                 <div class="split_content_isometric">
@@ -222,24 +265,24 @@
                                 <div class="split_content_card_container">
                                     <div class="custom_card" style="">
                                         <div class="face_up">
-                                            <div class="card_heading">API Endpoints Development</div>
+                                            <div class="card_heading">API Endpoints Dev</div>
                                             <img src="./svg/API/api_development.svg" style="max-width: 100%;max-height: 100%;">
                                         </div>
-                                        <div class="face_down">It is the point of entry in a communication channel when two systems are interacting.</div>
+                                        <div class="face_down">Develope API endpoints according to requirements.</div>
                                     </div>
                                     <div class="custom_card" style="">
                                         <div class="face_up">
                                             <div class="card_heading">API Integration</div>
                                             <img src="./svg/API/api_integration.svg" style="max-width: 100%;max-height: 100%;">
                                         </div>
-                                        <div class="face_down">It delivers data and facilitates connectivity between devices and programs.</div>
+                                        <div class="face_down">Integrate FrontEnd with API endpoints.</div>
                                     </div>
                                     <div class="custom_card" style="">
                                         <div class="face_up">
                                             <div class="card_heading">ChatBot Integration</div>
                                             <img src="./svg/API/chatbot.svg" style="max-width: 100%;max-height: 100%;">
                                         </div>
-                                        <div class="face_down">Greet your customers and automatically filter spammy messages.</div>
+                                        <div class="face_down">Integrate ChatBot fot better Customer Support .</div>
                                     </div>
                                     <!-- <div class="custom_card" style="">
                                         <div class="face_up">
@@ -252,7 +295,7 @@
                             </div>
                         </div>
                         <!-- Cloud Solution -->
-                        <div class="swiper-slide">
+                        <div class="swiper-slide cloud">
                             <div class="split_heading" style="color: white;">Cloud Solution</div>
                             <div class="split_content">
                                 <div class="split_content_isometric">
@@ -292,15 +335,15 @@
                         </div>
                         <!-- Wordpress -->
                         <div class="swiper-slide">
-                            <div class="split_heading" style="color: white;">Wordpress</div>
+                            <div class="split_heading" style="color: white;">WordPress</div>
                             <div class="split_content">
                                 <div class="split_content_isometric">
                                     <img src="./Isometric/wordpress.png">
                                 </div>
-                                <div class="split_content_card_container">
-                                    <div class="custom_card" style="">
+                                <div class="split_content_card_container" style="background-color: #F7F7F7;">
+                                    <div class="custom_card">
                                         <div class="face_up">
-                                            <div class="card_heading">WordPress Development</div>
+                                            <div class="card_heading">WordPress Dev</div>
                                             <img src="./svg/Wordpress/wordpress.svg" style="max-width: 100%;max-height: 100%;">
                                         </div>
                                         <div class="face_down">Design your required website in wordpress with us.</div>
@@ -310,14 +353,14 @@
                                             <div class="card_heading">WordPressPlugIn</div>
                                             <img src="./svg/Wordpress/plug_in.svg" style="max-width: 100%;max-height: 100%;">
                                         </div>
-                                        <div class="face_down">We will design additional plugins for spacific uses.</div>
+                                        <div class="face_down">We will integrate additional plugins for spacific uses.</div>
                                     </div>
                                     <div class="custom_card" style="">
                                         <div class="face_up">
                                             <div class="card_heading">WordPress Modification</div>
                                             <img src="./svg/Wordpress/modification.svg" style="max-width: 100%;max-height: 100%;">
                                         </div>
-                                        <div class="face_down">We can modify your WordPress website according to your requirements.</div>
+                                        <div class="face_down">Give your WordPress website a new look.</div>
                                     </div>
                                     <!-- <div class="custom_card" style="">
                                         <div class="face_up">
@@ -330,7 +373,7 @@
                             </div>
                         </div>
                         <!-- Full Stack Web Development -->
-                        <div class="swiper-slide">
+                        <div class="swiper-slide fsd">
                             <div class="split_heading" style="color: white;font-size: x-large;">Full Stack Web Development</div>
                             <div class="split_content">
                                 <div class="split_content_isometric">
@@ -342,28 +385,28 @@
                                             <div class="card_heading">Shopping Site</div>
                                             <img src="./svg/full_stack/e-commerce.svg" style="max-width: 100%;max-height: 100%;">
                                         </div>
-                                        <div class="face_down"></div>
+                                        <div class="face_down">make your Products reach Millions of Customers.</div>
                                     </div>
                                     <div class="custom_card" style="">
                                         <div class="face_up">
-                                            <div class="card_heading">Portfolio/Fashion Design</div>
+                                            <div class="card_heading">Portfolio/Fashionista</div>
                                             <img src="./svg/full_stack/portfolio.svg" style="max-width: 100%;max-height: 100%;">
                                         </div>
-                                        <div class="face_down"></div>
+                                        <div class="face_down">Your Online appearance can change your business.</div>
                                     </div>
                                     <div class="custom_card" style="">
                                         <div class="face_up">
-                                            <div class="card_heading">e-Education</div>
+                                            <div class="card_heading">Ed-Tech</div>
                                             <img src="./svg/full_stack/e-education.svg" style="max-width: 100%;max-height: 100%;">
                                         </div>
-                                        <div class="face_down"></div>
+                                        <div class="face_down">Reach Millions of Students studying Online.</div>
                                     </div>
                                     <div class="custom_card" style="">
                                         <div class="face_up">
                                             <div class="card_heading">Blog/Article Site</div>
                                             <img src="./svg/full_stack/blogging.svg" style="max-width: 100%;max-height: 100%;">
                                         </div>
-                                        <div class="face_down"></div>
+                                        <div class="face_down">Bring your Ideas live to by online Blog.</div>
                                     </div>
                                 </div>
                             </div>
@@ -380,7 +423,7 @@
     </div>
 
     <!-- Technology -->
-    <div style="height: 100vh;width: 100vw;">
+    <div id="technology" style="height: 100vh;width: 100vw;">
         <div class="split split_right" >
             <div class="split_body" >
                 <div class="swiper-container_tech no_scroll_bar" style="width: 100%;height: 100%;">
@@ -390,7 +433,7 @@
                         </div>
                         <!-- Front End -->
                         <div class="swiper-slide">
-                            <div class="split_heading" style="color: white;font-size: larger;">Front-End Web Designing</div>
+                            <div class="split_heading" style="color: white;font-size: x-large;">Front-End Web Designing</div>
                             <div class="split_content">
                                 <div class="tech_card_container">
                                     <div style="width: 100%;display: flex;justify-content: space-around">
@@ -515,7 +558,7 @@
     </div>
     
     <!-- Clients -->
-    <div class="client_section" style="">
+    <div id="clients" class="client_section" style="">
         <div style="height: 25%;width: 100%;background-color: #111;display: flex;justify-content: center;align-items: center;color: white;font-size: xx-large;letter-spacing: 4px;">Our Clients</div>
         <div style="width: 100%;height: 75%">
             <div class="swiper-container_client" style="width: 100%;height: 100%;">
@@ -675,7 +718,7 @@
 
 
     <!-- contact us -->
-    <div style="width: 100%;height: 100vh;background-color: #111;" >
+    <div id="contacts" style="width: 100%;height: 100vh;background-color: #111;" >
         <div style="width: 100%;height: 20%;color: white;text-align: center;display: flex;flex-direction: column;justify-content: center;align-items: center;color: #3e3;">
             <div style="font-size: xx-large;line-height: 5rem;">CONTACT US</div>
             <div style="letter-spacing: 3px;color: white;">We are waiting to hear from you soon .......</div>
@@ -712,14 +755,14 @@
                     <div class="back side">
                         <div class="contact_content">
                             <h1>Contact Me</h1>
-                            <form>
+                            <form method="POST">
                                 <label>Your Name :</label>
                                 <input type="text" placeholder="Omar Khattab">
                                 <label>Your E-mail :</label>
                                 <input type="text" placeholder="Example@mail.com">
                                 <label>Your message :</label>
                                 <textarea placeholder="The Subject"></textarea>
-                                <input type="submit" value="Done">
+                                <input type="submit" value="Send" onclick="sendEmail()">
                             </form>
                         </div>
                     </div>
@@ -913,7 +956,7 @@
     
 
 
-    
+    <script src="./JS/nav.js"></script>
     <script src="./JS/swipe.js"></script>
     <script src="JS\main.js"></script>
 </body>
