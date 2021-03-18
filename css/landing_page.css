@@ -1,7 +1,7 @@
 .landing_page{
     min-height: 100vh;
     padding: 0;
-    background: url('../landing_page_bg.jpg') no-repeat;
+    background: url('../Images/landing_page_bg.jpg') no-repeat;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -83,7 +83,7 @@
     .landing_page{
         min-height: 100vh;
         padding: 0;
-        background: url('../landing_page_bg.jpg') no-repeat;
+        background: url('../Images/landing_page_bg.jpg') no-repeat;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: 100% 100%;
@@ -150,7 +150,7 @@
     .landing_page{
         min-height: 100vh;
         padding: 0;
-        background: url('../landing_page_bg_mobile.jpg') no-repeat;
+        background: url('../Images/landing_page_bg_mobile.jpg') no-repeat;
         background-repeat: no-repeat;
         background-attachment: fixed;
         /* margin-bottom: 10vh; */
