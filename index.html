@@ -57,9 +57,12 @@
     <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
 
 
-
+    <!-- Sweet alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- Email -->
-    <script src= "https://smtpjs.com/v3/smtp.js"> </script> 
+    <script src= "https://smtpjs.com/v3/smtp.js"></script> 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
 
     
     
@@ -125,7 +128,7 @@
         </div>
         <!-- Image -->
         <div class="landing_page_end_image" style="">
-            <img src="./websites.png">
+            <img src="./Images/websites.png">
         </div>
         
     </div>
@@ -748,21 +751,19 @@
                     <div class="front side">
                         <div class="contact_content cmp" style="display: flex;align-items:center;height: 100%;width: 100%;justify-content: center   ;">
                             <div style="color: #3e3">code2transform</div>
-                            <!-- <p>I am a graphic designer and art director. I am as well specialised in front end web design, user experience and creating identities. Throughout my career, I have worked with companies of all shapes and sizes that enriched my experience
-                            </p> -->
                         </div>
                     </div>
                     <div class="back side">
                         <div class="contact_content">
-                            <h1>Contact Me</h1>
-                            <form method="POST">
+                            <h1>Contact</h1>
+                            <form id='website_contact_form' method="POST">
                                 <label>Your Name :</label>
-                                <input type="text" placeholder="Omar Khattab">
+                                <input id="from_name" type="text" placeholder="Type your name here">
                                 <label>Your E-mail :</label>
-                                <input type="text" placeholder="Example@mail.com">
+                                <input id="from_email" type="text" placeholder="Eg. Example@mail.com">
                                 <label>Your message :</label>
-                                <textarea placeholder="The Subject"></textarea>
-                                <input type="submit" value="Send" onclick="sendEmail()">
+                                <textarea id="message" placeholder="Any personalised message Eg.I need a wordpress porfolio website for $100"></textarea>
+                                <input type="submit" value="Send">
                             </form>
                         </div>
                     </div>
@@ -959,5 +960,6 @@
     <script src="./JS/nav.js"></script>
     <script src="./JS/swipe.js"></script>
     <script src="JS\main.js"></script>
+    <script src="JS/contact.js"></script>
 </body>
 </html>
