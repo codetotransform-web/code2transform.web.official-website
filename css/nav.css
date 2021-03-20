@@ -5,7 +5,7 @@
 }
 
 nav {
-    /* position: relative; */
+    position: relative;
     top: 0;
     width: 100%;
     display: flex;
@@ -16,7 +16,6 @@ nav {
     background-color: black;
     /* font-family: 'Courier New', Courier, monospace; */
     font-family: 'Times New Roman', Times, serif;
-    position:sticky;
     z-index: 99;
     color: black;
 }
