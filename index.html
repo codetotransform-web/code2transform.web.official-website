@@ -14,7 +14,11 @@
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/footer.css">
     <!-- <link rel="stylesheet" href="./css/media.css"> -->
+    
 
+    <!-- Swiper -->
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+    <script src="./swiper/swiper-bundle.min.js"></script>
 
     <!-- <link href="https://fonts.googleapis.com/css?family=Psoppins%26display=swap" rel="stylesheet"> -->
     <style>
@@ -22,13 +26,27 @@
             scroll-behavior: smooth;
         }
         body{
-            width: 100vw;
+            max-width: 100vw;
+            overflow-x: hidden;
+            padding: 0;
+            margin: 0;
             position: relative;
+            box-sizing: border-box;
+            /* overflow: hidden; */
+            min-height: 100vh;
+            /* padding: 10px; */
             /* overflow: hidden; */
         }
         h1,p{
             padding: 0;
             margin: 0;
+        }
+        .swiper-pagination-progressbar{
+            background: gray;
+        }
+        .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+            /* background-color: magenta; */
+            padding: 1px;
         }
         
     </style>
@@ -51,8 +69,7 @@
 
 <!-- fonts -->
     
-    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
-    <script src="./swiper/swiper-bundle.min.js"></script>
+    
 
     <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
 
@@ -69,6 +86,7 @@
 </head>
 <body>
     
+<section>
     <!-- Landing page -->
     <div class="landing_page" id="home" >
         <!-- top menu -->
@@ -86,10 +104,13 @@
               <li><a href="#">Feedback</a></li>
             </ul>
         </nav> -->
-        <!--Navbar -->
+        
+  <!--/.Navbar -->
+        <!-- Landing page content -->
         <nav>
             <div class="logo">
-                <h4>code2transform</h4>
+                <!-- <h4>code2transform</h4> -->
+                <img fill="white" src="./cmp_logo/linotypy_code2transform-removebg-preview.svg" style="width: 40vh">
             </div>
             <ul id="nav-links" class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -103,8 +124,6 @@
                 <div class="line3"></div>
             </div>
         </nav>
-  <!--/.Navbar -->
-        <!-- Landing page content -->
 
         <!-- Company Branding -->
         <div class="cmp_branding">
@@ -117,7 +136,7 @@
         <!-- Product Description -->
         <div class="cmp_description">
             <div>
-                <div>Bring tour Services online with the stunning websites which can reach <span>46,000</span> MILLIONS of user using Internet.</div>
+                <div>Bring tour Services online with stunning websites which can reach <span>46,000</span> MILLIONS of user using Internet.</div>
             </div>
         </div>
 
@@ -132,7 +151,8 @@
         </div>
         
     </div>
-
+</section>
+<section>
     <!-- Services -->
     <div id="services" style="width: 100vw;">
         <div class="split">
@@ -140,6 +160,7 @@
         
             <div class="split_body">
                 <div class="swiper-container swiper-container_services">
+                    
                     <div class="swiper-wrapper">
                         <!-- Web Designing -->
                         <div class="swiper-slide">
@@ -220,7 +241,7 @@
                             </div>
                         </div>
                         <!-- Backend Development -->
-                        <div class="swiper-slide">
+                        <div class="swiper-slide backend">
                             <div class="split_heading" style="color: white;">Backend Development</div>
                             <div class="split_content">
                                 <div class="split_content_isometric" >
@@ -417,6 +438,9 @@
                         
                         
                     </div>
+                    <div class="swiper-pagination"></div>
+                    <!-- <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div> -->
                 </div>
                     
                 
@@ -424,7 +448,8 @@
             </div>
         </div>
     </div>
-
+</section>
+<section>
     <!-- Technology -->
     <div id="technology" style="height: 100vh;width: 100vw;">
         <div class="split split_right" >
@@ -509,7 +534,7 @@
                         <div class="swiper-slide">
                             <div class="split_heading" style="color: white;">Cloud Solutions</div>
                             <div class="split_content">
-                                <div class="tech_card_container">
+                                <div class="tech_card_container" style="background-color: rgba(0,0,0,0.5);">
                                     
                                     <div class="tech_card" style="">
                                         <img src="./technology logo/aws.png" style="max-width: 70%;max-height: 70%;">
@@ -552,6 +577,9 @@
                         
                         
                     </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
             </div>
             <div class="split_right_subject" style="font-size: 4rem;">Technology</div>
@@ -559,7 +587,8 @@
             
         </div>
     </div>
-    
+</section>
+<section>    
     <!-- Clients -->
     <div id="clients" class="client_section" style="">
         <div style="height: 25%;width: 100%;background-color: #111;display: flex;justify-content: center;align-items: center;color: white;font-size: xx-large;letter-spacing: 4px;">Our Clients</div>
@@ -717,9 +746,10 @@
         </div>
         
     </div>
+</section>
 
 
-
+<section>
     <!-- contact us -->
     <div id="contacts" style="width: 100%;height: 100vh;background-color: #111;" >
         <div style="width: 100%;height: 20%;color: white;text-align: center;display: flex;flex-direction: column;justify-content: center;align-items: center;color: #3e3;">
@@ -778,14 +808,15 @@
             
         </div>
     </div>
+</section>
     
 
     
-
+<footer>
     <!-- Footer Starts-->
 
-    <div style="display: flex;flex-direction: column;">
-        <div class="footer">
+    <div class="footer" style="display: flex;flex-direction: column;">
+        <div class="footer_body">
             <div class="row">
                 <div class="cmp_info">
                     <div class="footer_cmp_name">
@@ -861,7 +892,7 @@
                             <a  href="">Contact Us</a>
                             <a  href="">FAQ</a>
                             <a  href="">Downloads</a>
-                            <a  href="">Locate A Dealer</a>
+                            <a  href="">Affiliate Program</a>
                         </div>
                         
                         <div class="links_column" >
@@ -872,12 +903,12 @@
                             <a href="" >Our Works</a>
                             
                         </div>
-                        <div class="links_column" >
-                            <p style="color: gray;font-size: 15px;">code2transform</p>
-                            <a href="" >About c2t</a>
-                            <a href="" >c2t Team</a>
-                            <a href="" >Carrers</a>
-                            <a href="" >Our Works</a>
+                        <div class="links_column"  >
+                            <p style="color: gray;font-size: 15px;">Support</p>
+                            <a  href="">Projects</a>
+                            <a  href="">Work</a>
+                            <a  href="">Awards</a>
+                            <a  href="">Donate</a>
                         </div>
                     
                 </div>
@@ -940,26 +971,24 @@
     
     <!-- Footer Ends -->
     
-    
+</footer>
 
     <!-- background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url(./Images/contact-bg.jpg) no-repeat;background-size: cover ; -->
     
 
-    <script type="text/javascript">
-        
-    </script>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
-    integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" 
-    crossorigin="anonymous">
-    </script>
-    <script src="JS/snap-scroll.min.js"></script>
     
 
+    <script src="./JS/jquery-3.6.0.min.js">
+    </script>
+    
+    
 
+    <script src="JS/snap-scroll.min.js"></script>
     <script src="./JS/nav.js"></script>
     <script src="./JS/swipe.js"></script>
     <script src="JS\main.js"></script>
     <script src="JS/contact.js"></script>
+    <script type="text/javascript">
+    </script>
 </body>
 </html>

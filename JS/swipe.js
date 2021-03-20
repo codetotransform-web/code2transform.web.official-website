@@ -1,10 +1,11 @@
 var swiper = new Swiper('.swiper-container_whole_page', {
   direction: 'vertical',
   mousewheel: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
+  // loop: true,
+  // pagination: {
+  //   el: '.swiper-pagination',
+  //   clickable: true,
+  // },
 });
 swiper.params.mousewheel.releaseOnEdges = true;
 
@@ -13,10 +14,25 @@ swiper.params.mousewheel.releaseOnEdges = true;
 var swiper_services = new Swiper('.swiper-container_services', {
   direction: 'vertical',
   mousewheel: true,
+  grabCursor: true,
+  // loop: true,
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
   },
+  // pagination: {
+  //   el: '.swiper-pagination',
+  //   type: 'progressbar',
+    
+  // },
+  // navigation: {
+  //   nextEl: '.swiper-button-next',
+  //   prevEl: '.swiper-button-prev',
+  // },
 });
 swiper_services.params.mousewheel.releaseOnEdges = true;
 swiper_services.params.touchReleaseOnEdges= true;
@@ -25,19 +41,28 @@ swiper_services.params.touchReleaseOnEdges= true;
 
 var swiper_tech = new Swiper('.swiper-container_tech', {
   effect: 'cube',
-  direction: 'vertical',
-  // grabCursor: true,
+  // direction: 'vertical',
+  grabCursor: true,
   mousewheel: true,
   // loop: true,
   cubeEffect: {
-  shadow: true,
-  slideShadows: true,
-  shadowOffset: 20,
-  shadowScale: 0.94,
+    shadow: true,
+    slideShadows: true,
+    shadowOffset: 20,
+    shadowScale: 0.94,
   },
-  // pagination: {
-  //   el: '.swiper-pagination',
-  // },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'progressbar',
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 });
 swiper_tech.params.mousewheel.releaseOnEdges = true;
 swiper_tech.params.touchReleaseOnEdges= true;
@@ -58,6 +83,7 @@ var swiper = new Swiper('.swiper-container_client', {
   spaceBetween: 30,
   freeMode: true,
   loop: true,
+  grabCursor: true,
   autoplay: {
       delay: 2500,
       disableOnInteraction: false,
