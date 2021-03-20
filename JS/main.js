@@ -1,11 +1,11 @@
 $(function(){
 
-    $("section").SnapScroll();
+    $("section , footer").SnapScroll();
   
 });
 
 
-$("section").SnapScroll({
+$("section , footer").SnapScroll({
 
     // Fires events
     events:true,                    
